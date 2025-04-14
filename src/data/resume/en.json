@@ -1,0 +1,210 @@
+{
+    "name": "Fayçal Ghozzi",
+    "initials": "FG",
+    "url": "https://github.com/faycal-ghozzi",
+    "location": "Saint-Ouen-sur-Seine, France / Tunis, Tunisia",
+    "locationLink": "https://www.google.com/maps/place/Saint-Ouen-sur-Seine",
+    "description": "Software engineer specialized in designing, optimizing, and integrating critical applications with strong expertise in backend development, REST & SOAP APIs, and software architecture.",
+    "summary": "Currently leading system evolution at Banque Tuniso-Libyenne, delivering high-performance solutions that enhance connectivity between platforms and improve business workflows. Passionate about tackling complex technical challenges and managing projects.",
+    "avatarUrl": "/me.png",
+    "skills": [
+        "PHP",
+        "JavaScript",
+        "Python",
+        "TypeScript",
+        "Java",
+        "JBase",
+        "Laravel",
+        "Flask",
+        "Symfony",
+        "React",
+        "VueJs",
+        "NextJs",
+        "Git",
+        "Docker",
+        "Selenium",
+        "MySQL",
+        "MongoDB",
+        "Agile (Scrum)",
+        "Kanban"
+    ],
+    "navbar": [
+        { "href": "/", "icon": "home", "label": "Home" }
+    ],
+    "contact": {
+        "email": "faycal.ghozzi@gmail.com",
+        "tel": "+33 (0) 7 63 59 68 73 / +216 21 678 687",
+        "social": {
+            "GitHub": {
+                "name": "GitHub",
+                "url": "https://github.com/faycal-ghozzi",
+                "icon": "github",
+                "navbar": true
+            },
+            "LinkedIn": {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/faycal-ghozzi/",
+                "icon": "linkedin",
+                "navbar": true
+            },
+            "X": {
+                "name": "X",
+                "url": "https://x.com/fayghz",
+                "icon": "x",
+                "navbar": true
+            },
+            "email": {
+                "name": "Send Email",
+                "url": "mailto:faycal.ghozzi@gmail.com",
+                "icon": "email",
+                "navbar": true
+            }
+        }
+    },
+    "work": [
+        {
+            "company": "Banque Tuniso-Libyenne",
+            "href": "",
+            "badges": [],
+            "location": "Tunis, Tunisia",
+            "title": "Software Engineer",
+            "logoUrl": "/btl.png",
+            "start": "October 2024",
+            "end": "Present",
+            "description": "Developed a middleware integrating TuniChèque with Temenos T24 via REST & SOAP APIs. Led the BTL M Banking app project. Improved banking workflows by 20% and enhanced SWIFT file handling. Deployed and optimized web apps on Apache servers. Mentored interns."
+        },
+        {
+            "company": "Hortensia Agency",
+            "href": "",
+            "badges": [],
+            "location": "Remote",
+            "title": "Software Engineer",
+            "logoUrl": "/hortensia_agency.png",
+            "start": "May 2024",
+            "end": "October 2024",
+            "description": "Built 'Project Curve', a predictive analytics tool using sigmoid equations. Integrated Stripe. Maintained feature stability and mentored interns."
+        },
+        {
+            "company": "7Systems GmbH",
+            "href": "https://bmacloud.de",
+            "badges": [],
+            "location": "Gummersbach, Germany",
+            "title": "Software Engineer",
+            "logoUrl": "7s.png",
+            "start": "February 2023",
+            "end": "April 2024",
+            "description": "Expanded bmacloud.de platform. Migrated frontend to React.js. Improved productivity by 30% and implemented robust test automation."
+        }
+    ],
+    "education": [
+        {
+            "school": "École Supérieure Privée d’Ingénierie et de Technologies (ESPRIT)",
+            "href": "https://esprit.tn",
+            "degree": "National Engineering Degree in Computer Science",
+            "logoUrl": "/esprit.jpg",
+            "start": "2017",
+            "end": "2023"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Tic-Tac-Two – Multiplayer Online Game",
+            "href": "https://tic-tac-two-phi.vercel.app/",
+            "dates": "",
+            "active": true,
+            "description": "Created a two-turn-per-round multiplayer Tic-Tac-Toe game with real-time WebSocket communication. Deployed using Vercel and Render. Built to sharpen full-stack engineering skills.",
+            "technologies": [
+                "Next.js",
+                "TypeScript",
+                "Node.js",
+                "WebSockets"
+            ],
+            "links": [
+                {
+                "type": "Website",
+                "href": "https://tic-tac-two-phi.vercel.app/",
+                "icon": "globe"
+                },
+                {
+                "type": "Source",
+                "href": "https://github.com/faycal-ghozzi/tic-tac-two",
+                "icon": "github"
+                }
+            ],
+            "image": "",
+            "video": ""
+        },
+        {
+            "title": "NewsAPI Flutter – Real-Time News Aggregator",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Developed a Flutter application that fetches and displays real-time news articles using the NewsAPI. The app allows users to browse top headlines, search for specific topics, and filter news by categories.",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "REST API",
+                "NewsAPI"
+            ],
+            "links": [
+                {
+                    "type": "Source",
+                    "href": "https://github.com/faycal-ghozzi/NewsAPI_Flutter",
+                    "icon": "github"
+                }
+            ],
+            "image": "",
+            "video": ""
+        },
+        {
+            "title": "Velotn – Smart Bike Sharing Platform",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Developed a comprehensive bike-sharing platform with web and mobile applications, including real-time tracking and user management.",
+            "technologies": [
+                "Java",
+                "JavaScript",
+                "Spring Boot",
+                "React",
+                "Android"
+            ],
+            "links": [
+                {
+                "type": "Web App",
+                "href": "https://github.com/faycal-ghozzi/velotnWeb",
+                "icon": "github"
+                },
+                {
+                "type": "Mobile App",
+                "href": "https://github.com/faycal-ghozzi/velotnMobile",
+                "icon": "github"
+                },
+                {
+                "type": "Dashboard",
+                "href": "https://github.com/faycal-ghozzi/VelotnDash",
+                "icon": "github"
+                }
+            ],
+            "image": "",
+            "video": ""
+        }
+    ],
+    "sections": {
+        "hello": "Hi, I'm",
+        "about": "About",
+        "work": "Work Experience",
+        "education": "Education",
+        "skills": "Skills",
+        "projectsLabel": "My Projects",
+        "projectsTitle": "Check out my latest work",
+        "projectsDescription": "I've worked on a variety of projects...",
+        "contact": "Contact",
+        "contactTitle": "Get in Touch",
+        "contactDescriptionStart": "Got a question or just want to say hi?",
+        "contactDescriptionLink": "Send me an email",
+        "contactDescriptionEnd": "and I’ll get back to you as soon as I can.",
+        "present": "Present"
+    }
+}
+  

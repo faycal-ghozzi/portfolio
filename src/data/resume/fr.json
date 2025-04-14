@@ -1,0 +1,210 @@
+{
+    "name": "Fayçal Ghozzi",
+    "initials": "FG",
+    "url": "https://github.com/faycal-ghozzi",
+    "location": "Saint-Ouen-sur-Seine, France / Tunis, Tunisie",
+    "locationLink": "https://www.google.com/maps/place/Saint-Ouen-sur-Seine",
+    "description": "Ingénieur logiciel spécialisé dans la conception, l'optimisation et l'intégration d'applications critiques, avec une expertise approfondie en développement backend, APIs REST & SOAP, et architecture logicielle.",
+    "summary": "Actuellement responsable de l'évolution des systèmes à la Banque Tuniso-Libyenne, fournissant des solutions performantes qui améliorent la connectivité entre les plateformes et optimisent les flux de travail métier. Passionné par la résolution de défis techniques complexes et la gestion de projets.",
+    "avatarUrl": "/me.png",
+    "skills": [
+      "PHP",
+      "JavaScript",
+      "Python",
+      "TypeScript",
+      "Java",
+      "JBase",
+      "Laravel",
+      "Flask",
+      "Symfony",
+      "React",
+      "VueJs",
+      "NextJs",
+      "Git",
+      "Docker",
+      "Selenium",
+      "MySQL",
+      "MongoDB",
+      "Agile (Scrum)",
+      "Kanban"
+    ],
+    "navbar": [
+      { "href": "/", "icon": "home", "label": "Accueil" }    ],
+    "contact": {
+      "email": "faycal.ghozzi@gmail.com",
+      "tel": "+33 (0) 7 63 59 68 73 / +216 21 678 687",
+      "social": {
+            "GitHub": {
+                "name": "GitHub",
+                "url": "https://github.com/faycal-ghozzi",
+                "icon": "github",
+                "navbar": true
+            },
+            "LinkedIn": {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/faycal-ghozzi/",
+                "icon": "linkedin",
+                "navbar": true
+            },
+            "X": {
+                "name": "X",
+                "url": "https://x.com/fayghz",
+                "icon": "x",
+                "navbar": true
+            },
+            "email": {
+                "name": "Send Email",
+                "url": "mailto:faycal.ghozzi@gmail.com",
+                "icon": "email",
+                "navbar": true
+            }
+        }
+    },
+    "work": [
+      {
+        "company": "Banque Tuniso-Libyenne",
+        "href": "",
+        "badges": [],
+        "location": "Tunis, Tunisie",
+        "title": "Ingénieur Logiciel",
+        "logoUrl": "/btl.png",
+        "start": "Octobre 2024",
+        "end": "Présent",
+        "description": "Développement d'un middleware intégrant TuniChèque avec Temenos T24 via des APIs REST & SOAP. Direction du projet de l'application BTL M Banking. Amélioration des flux de travail bancaires de 20 % et optimisation du traitement des fichiers SWIFT. Déploiement et optimisation d'applications web sur des serveurs Apache. Encadrement de stagiaires."
+      },
+      {
+        "company": "Hortensia Agency",
+        "href": "",
+        "badges": [],
+        "location": "Télétravail",
+        "title": "Ingénieur Logiciel",
+        "logoUrl": "/hortensia_agency.png",
+        "start": "Mai 2024",
+        "end": "Octobre 2024",
+        "description": "Développement de 'Project Curve', un outil d'analyse prédictive utilisant des équations sigmoïdes. Intégration de Stripe. Maintien de la stabilité des fonctionnalités et encadrement de stagiaires."
+      },
+      {
+        "company": "7Systems GmbH",
+        "href": "https://bmacloud.de",
+        "badges": [],
+        "location": "Gummersbach, Allemagne",
+        "title": "Ingénieur Logiciel",
+        "logoUrl": "7s.png",
+        "start": "Février 2023",
+        "end": "Avril 2024",
+        "description": "Expansion de la plateforme bmacloud.de. Migration du frontend vers React.js. Amélioration de la productivité de 30 % et mise en œuvre d'une automatisation robuste des tests."
+      }
+    ],
+    "education": [
+      {
+        "school": "École Supérieure Privée d’Ingénierie et de Technologies (ESPRIT)",
+        "href": "https://esprit.tn",
+        "degree": "Diplôme National d'Ingénieur en Informatique",
+        "logoUrl": "/esprit.jpg",
+        "start": "2017",
+        "end": "2023"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Tic-Tac-Two – Jeu Multijoueur en Ligne",
+        "href": "https://tic-tac-two-phi.vercel.app/",
+        "dates": "",
+        "active": true,
+        "description": "Création d'un jeu multijoueur de Tic-Tac-Toe avec deux tours par manche, utilisant une communication WebSocket en temps réel. Déployé avec Vercel et Render. Conçu pour perfectionner les compétences en ingénierie full-stack.",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "WebSockets"
+        ],
+        "links": [
+          {
+            "type": "Site Web",
+            "href": "https://tic-tac-two-phi.vercel.app/",
+            "icon": "globe"
+          },
+          {
+            "type": "Source",
+            "href": "https://github.com/faycal-ghozzi/tic-tac-two",
+            "icon": "github"
+          }
+        ],
+        "image": "",
+        "video": ""
+      },
+      {
+        "title": "NewsAPI Flutter – Agrégateur de Nouvelles en Temps Réel",
+        "href": "",
+        "dates": "",
+        "active": false,
+        "description": "Développement d'une application Flutter qui récupère et affiche des articles d'actualité en temps réel en utilisant NewsAPI. L'application permet aux utilisateurs de parcourir les principaux titres, de rechercher des sujets spécifiques et de filtrer les nouvelles par catégories.",
+        "technologies": [
+          "Flutter",
+          "Dart",
+          "API REST",
+          "NewsAPI"
+        ],
+        "links": [
+            {
+                "type": "Source",
+                "href": "https://github.com/faycal-ghozzi/NewsAPI_Flutter",
+                "icon": "github"
+              }
+            ],
+            "image": "",
+            "video": ""
+          },
+          {
+            "title": "Velotn – Plateforme Intelligente de Partage de Vélos",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Développement d'une plateforme complète de partage de vélos avec des applications web et mobiles, incluant le suivi en temps réel et la gestion des utilisateurs.",
+            "technologies": [
+              "Java",
+              "JavaScript",
+              "Spring Boot",
+              "React",
+              "Android"
+            ],
+            "links": [
+              {
+                "type": "Application Web",
+                "href": "https://github.com/faycal-ghozzi/velotnWeb",
+                "icon": "github"
+              },
+              {
+                "type": "Application Mobile",
+                "href": "https://github.com/faycal-ghozzi/velotnMobile",
+                "icon": "github"
+              },
+              {
+                "type": "Tableau de Bord",
+                "href": "https://github.com/faycal-ghozzi/VelotnDash",
+                "icon": "github"
+              }
+            ],
+            "image": "",
+            "video": ""
+          }
+        ],
+    "sections": {
+        "hello": "Salut, je suis",
+        "about": "À propos",
+        "work": "Expérience professionnelle",
+        "education": "Éducation",
+        "skills": "Compétences",
+        "projectsLabel": "Mes projets",
+        "projectsTitle": "Découvrez mes dernières réalisations",
+        "projectsDescription": "J'ai travaillé sur une variété de projets, allant de sites web simples à des applications complexes.",
+        "contact": "Contact",
+        "contactTitle": "Entrons en contact",
+        "contactDescriptionStart": "Une question ou juste envie de dire bonjour ?",
+        "contactDescriptionLink": "Envoie-moi un email",
+        "contactDescriptionEnd": "et je te répondrai dès que possible.",
+        "present": "Présent"
+    }
+}
+      
+  
