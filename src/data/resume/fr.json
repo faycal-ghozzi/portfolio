@@ -106,89 +106,159 @@
       }
     ],
     "projects": [
-      {
-        "title": "Tic-Tac-Two – Jeu Multijoueur en Ligne",
-        "href": "https://tic-tac-two-phi.vercel.app/",
-        "dates": "",
-        "active": true,
-        "description": "Création d'un jeu multijoueur de Tic-Tac-Toe avec deux tours par manche, utilisant une communication WebSocket en temps réel. Déployé avec Vercel et Render. Conçu pour perfectionner les compétences en ingénierie full-stack.",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Node.js",
-          "WebSockets"
-        ],
-        "links": [
-          {
-            "type": "Site Web",
+        {
+            "title": "Tic-Tac-Two – Jeu Multijoueur en Ligne",
             "href": "https://tic-tac-two-phi.vercel.app/",
-            "icon": "globe"
-          },
-          {
-            "type": "Source",
-            "href": "https://github.com/faycal-ghozzi/tic-tac-two",
-            "icon": "github"
-          }
-        ],
-        "image": "",
-        "video": ""
-      },
-      {
-        "title": "NewsAPI Flutter – Agrégateur de Nouvelles en Temps Réel",
-        "href": "",
-        "dates": "",
-        "active": false,
-        "description": "Développement d'une application Flutter qui récupère et affiche des articles d'actualité en temps réel en utilisant NewsAPI. L'application permet aux utilisateurs de parcourir les principaux titres, de rechercher des sujets spécifiques et de filtrer les nouvelles par catégories.",
-        "technologies": [
-          "Flutter",
-          "Dart",
-          "API REST",
-          "NewsAPI"
-        ],
-        "links": [
+            "dates": "",
+            "active": true,
+            "description": "Création d'un jeu multijoueur de Tic-Tac-Toe avec deux tours par manche, utilisant une communication WebSocket en temps réel. Déployé avec Vercel et Render. Conçu pour perfectionner les compétences en ingénierie full-stack.",
+            "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Node.js",
+            "WebSockets"
+            ],
+            "links": [
+            {
+                "type": "Site Web",
+                "href": "https://tic-tac-two-phi.vercel.app/",
+                "icon": "globe"
+            },
             {
                 "type": "Source",
-                "href": "https://github.com/faycal-ghozzi/NewsAPI_Flutter",
+                "href": "https://github.com/faycal-ghozzi/tic-tac-two",
                 "icon": "github"
-              }
+            }
             ],
             "image": "",
-            "video": ""
-          },
-          {
-            "title": "Velotn – Plateforme Intelligente de Partage de Vélos",
+            "video": "/tictactwo.mov"
+        },
+        {
+            "title": "Middleware-BTL – Système d’Intégration Bancaire",
             "href": "",
             "dates": "",
             "active": false,
-            "description": "Développement d'une plateforme complète de partage de vélos avec des applications web et mobiles, incluant le suivi en temps réel et la gestion des utilisateurs.",
+            "description": "Développement d'un middleware permettant la communication entre l'application Tunicheques et le système bancaire central (Temenos T24). Utilisation des API REST pour communiquer avec Tunicheques et de SOAP pour l’envoi de messages OFS vers Temenos. Intègre un système complet de journalisation pour le suivi des opérations ainsi qu’un tableau de bord pour la visualisation des informations clés par les équipes bancaires.",
             "technologies": [
-              "Java",
-              "JavaScript",
-              "Spring Boot",
-              "React",
-              "Android"
+                "PHP 8.3",
+                "JBase",
+                "MySQL",
+                "API REST",
+                "SOAP",
+                "JSON",
+                "XML",
+                "Temenos T24"
+            ],
+            "links": [],
+            "image": "/tunicheques.png",
+            "video": ""
+        },
+        {
+            "title": "BTL-Synthèse – Système d’Analyse des États Financiers",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Création d'une application modulaire permettant la saisie et l’analyse des états financiers des clients. Le système digitalise un processus auparavant manuel et lent, permettant désormais une validation rapide pour la prise de décision en matière de risque. La saisie des données est manuelle et modulable, avec une première validation automatique des actifs, passifs et résultats de l’exercice.",
+            "technologies": [
+                "Laravel 9",
+                "MySQL",
+                "TailwindCSS"
+            ],
+            "links": [],
+            "image": "/btl-synthese.png",
+            "video": ""
+        },
+        {
+            "title": "NewsFEED – Agrégateur de Nouvelles en Temps Réel",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Développement d'une application Flutter qui récupère et affiche des articles d'actualité en temps réel en utilisant NewsAPI. L'application permet aux utilisateurs de parcourir les principaux titres, de rechercher des sujets spécifiques et de filtrer les nouvelles par catégories.",
+            "technologies": [
+            "Flutter",
+            "Dart",
+            "API REST",
+            "NewsAPI",
+            "Hive"
             ],
             "links": [
-              {
-                "type": "Application Web",
-                "href": "https://github.com/faycal-ghozzi/velotnWeb",
-                "icon": "github"
-              },
-              {
-                "type": "Application Mobile",
-                "href": "https://github.com/faycal-ghozzi/velotnMobile",
-                "icon": "github"
-              },
-              {
-                "type": "Tableau de Bord",
-                "href": "https://github.com/faycal-ghozzi/VelotnDash",
-                "icon": "github"
-              }
-            ],
-            "image": "",
-            "video": ""
-          }
+                {
+                    "type": "Source",
+                    "href": "https://github.com/faycal-ghozzi/NewsAPI_Flutter",
+                    "icon": "github"
+                }
+                ],
+                "image": "/newsfeed.gif",
+                "video": ""
+            },
+            {
+                "title": "Velotn – Plateforme Intelligente de Partage de Vélos",
+                "href": "",
+                "dates": "",
+                "active": false,
+                "description": "Développement d'une plateforme complète de partage de vélos avec des applications web et mobiles, incluant le suivi en temps réel et la gestion des utilisateurs.",
+                "technologies": [
+                "Java",
+                "JavaScript",
+                "Spring Boot",
+                "React",
+                "Android"
+                ],
+                "links": [
+                {
+                    "type": "Application Web",
+                    "href": "https://github.com/faycal-ghozzi/velotnWeb",
+                    "icon": "github"
+                },
+                {
+                    "type": "Application Mobile",
+                    "href": "https://github.com/faycal-ghozzi/velotnMobile",
+                    "icon": "github"
+                },
+                {
+                    "type": "Tableau de Bord",
+                    "href": "https://github.com/faycal-ghozzi/VelotnDash",
+                    "icon": "github"
+                }
+                ],
+                "image": "/velotn.png",
+                "video": ""
+            }
         ],
+        "certifications": [
+        {
+            "title": "Spécialisation en Test et Automatisation Logicielle",
+            "description": "Une spécialisation en cours axée sur les bonnes pratiques du test logiciel, les frameworks d’automatisation et le développement orienté test. Allie théorie et application concrète dans le développement logiciel moderne.",
+            "date": "En cours",
+            "location": "À distance",
+            "image": "/coursera.png",
+            "links": []
+        },
+        {
+            "title": "Cours d’Intelligence Artificielle",
+            "description": "Un programme complet proposé par le Samsung Innovation Campus, couvrant les bases de l’intelligence artificielle, de l’apprentissage automatique et du traitement de données. Accent mis sur les projets pratiques avec des jeux de données réels.",
+            "date": "Février 2025",
+            "location": "À distance",
+            "image": "/samsung.webp",
+            "links": []
+        },
+        {
+            "title": "Python Intermédiaire",
+            "description": "Une formation pratique de DataCamp pour renforcer les compétences Python, incluant les compréhensions de listes, les fonctions lambda, la gestion des erreurs et l’utilisation de bibliothèques externes.",
+            "date": "Janvier 2022",
+            "location": "À distance",
+            "image": "/datacamp.svg",
+            "links": []
+        },
+        {
+            "title": "Fondamentaux du Deep Learning",
+            "description": "Une introduction essentielle au deep learning proposée par NVIDIA, abordant les réseaux de neurones, les principes de l’apprentissage profond et le calcul accéléré par GPU avec TensorFlow et PyTorch.",
+            "date": "Octobre 2021",
+            "location": "À distance",
+            "image": "/nvidia.png",
+            "links": []
+        }
+    ],
     "sections": {
         "hello": "Salut, je suis",
         "about": "À propos",
@@ -198,6 +268,9 @@
         "projectsLabel": "Mes projets",
         "projectsTitle": "Découvrez mes dernières réalisations",
         "projectsDescription": "J'ai travaillé sur une variété de projets, allant de sites web simples à des applications complexes.",
+        "certificationsLabel": "Certifications & Réalisations",
+        "certificationsTitle": "Formations, Projets & Accomplissements",
+        "certificationsDescription": "Un aperçu des certifications, formations et réalisations qui témoignent de mon apprentissage continu et de mon expérience pratique.",
         "contact": "Contact",
         "contactTitle": "Entrons en contact",
         "contactDescriptionStart": "Une question ou juste envie de dire bonjour ?",

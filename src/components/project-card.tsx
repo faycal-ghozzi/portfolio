@@ -67,8 +67,12 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
+            className={`overflow-hidden h-40 ${
+              title.includes("NewsFEED")
+                ? "w-[70%] mx-auto object-cover object-[center_-20px]"
+                : "w-full object-cover object-top"
+            }`}
+          />  
         )}
       </Link>
       <CardHeader className="px-2">

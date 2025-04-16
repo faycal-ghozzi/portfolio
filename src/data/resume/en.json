@@ -28,9 +28,6 @@
         "Agile (Scrum)",
         "Kanban"
     ],
-    "navbar": [
-        { "href": "/", "icon": "home", "label": "Home" }
-    ],
     "contact": {
         "email": "faycal.ghozzi@gmail.com",
         "tel": "+33 (0) 7 63 59 68 73 / +216 21 678 687",
@@ -132,10 +129,45 @@
                 }
             ],
             "image": "",
+            "video": "/tictactwo.mov"
+        },
+        {
+            "title": "Middleware-BTL – Core Banking Integration System",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Developed a robust middleware solution that connects the Tunicheques application with the global banking core (Temenos T24). REST APIs are used to communicate with Tunicheques, while SOAP is used for integration with Temenos, handling OFS messages for cheque reservations. Includes a detailed logging system for transaction traceability and a dashboard for real-time monitoring by banking staff.",
+            "technologies": [
+                "PHP 8.3",
+                "JBase",
+                "MySQL",
+                "REST API",
+                "SOAP",
+                "JSON",
+                "XML",
+                "Temenos T24"
+            ],
+            "links": [],
+            "image": "/tunicheques.png",
             "video": ""
         },
         {
-            "title": "NewsAPI Flutter – Real-Time News Aggregator",
+            "title": "BTL-Synthèse – Financial Statement Analysis Tool",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Built a dynamic, modular application to digitalize and analyze clients’ financial statements. It facilitates rapid validation of balance sheets and income statements, speeding up the risk assessment process. The system allows flexible customization of financial rows, with validation logic for assets, liabilities, and fiscal results to ensure accuracy before further processing.",
+            "technologies": [
+                "Laravel 9",
+                "MySQL",
+                "TailwindCSS"
+            ],
+            "links": [],
+            "image": "/btl-synthese.png",
+            "video": ""
+        },
+        {
+            "title": "NewsFEED – Real-Time News Aggregator",
             "href": "",
             "dates": "",
             "active": false,
@@ -144,7 +176,8 @@
                 "Flutter",
                 "Dart",
                 "REST API",
-                "NewsAPI"
+                "NewsAPI",
+                "Hive"
             ],
             "links": [
                 {
@@ -153,7 +186,7 @@
                     "icon": "github"
                 }
             ],
-            "image": "",
+            "image": "/newsfeed.gif",
             "video": ""
         },
         {
@@ -186,8 +219,42 @@
                 "icon": "github"
                 }
             ],
-            "image": "",
+            "image": "/velotn.png",
             "video": ""
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Software Testing and Automation Specialization",
+            "description": "An ongoing specialization focused on best practices in software testing, automation frameworks, and test-driven development. Covers both theory and real-world application of quality assurance in modern software development.",
+            "date": "In Progress",
+            "location": "Remote",
+            "image": "/coursera.png",
+            "links": []
+        },
+        {
+            "title": "Artificial Intelligence Course",
+            "description": "A comprehensive program by Samsung Innovation Campus covering the fundamentals of AI, machine learning, and data processing techniques. Emphasizes practical implementation using real-world datasets and scenarios.",
+            "date": "February 2025",
+            "location": "Remote",
+            "image": "/samsung.webp",
+            "links": []
+        },
+        {
+            "title": "Intermediate Python",
+            "description": "A hands-on course from DataCamp designed to strengthen Python skills, covering topics like list comprehensions, lambda functions, error handling, and working with external libraries.",
+            "date": "January 2022",
+            "location": "Remote",
+            "image": "/datacamp.svg",
+            "links": []
+        },
+        {
+            "title": "Fundamentals of Deep Learning",
+            "description": "A foundational course from NVIDIA that introduces the core principles of deep learning, neural networks, and GPU-accelerated computing using frameworks such as TensorFlow and PyTorch.",
+            "date": "October 2021",
+            "location": "Remote",
+            "image": "/nvidia.png",
+            "links": []
         }
     ],
     "sections": {
@@ -199,6 +266,9 @@
         "projectsLabel": "My Projects",
         "projectsTitle": "Check out my latest work",
         "projectsDescription": "I've worked on a variety of projects...",
+        "certificationsLabel": "Certifications & Realizations",
+        "certificationsTitle": "Courses, Projects & Achievements",
+        "certificationsDescription": "A collection of certifications, programs, and other accomplishments that reflect my continuous learning and hands-on experience.",
         "contact": "Contact",
         "contactTitle": "Get in Touch",
         "contactDescriptionStart": "Got a question or just want to say hi?",

@@ -3,6 +3,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
+import { CertificationCard } from "@/components/certifications-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -148,6 +149,45 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  {DATA.sections.certificationsLabel}
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  {DATA.sections.certificationsLabel}
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  {DATA.sections.certificationsDescription}
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+              {DATA.certifications.map((certificate, id) => (
+                <BlurFade
+                  key={certificate.title + certificate.date}
+                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                >
+                  <CertificationCard
+                    title={certificate.title}
+                    description={certificate.description}
+                    location={certificate.location}
+                    dates={certificate.date}
+                    image={certificate.image}
+                    links={certificate.links}
+                  />
+                </BlurFade>
+              ))}
+            </ul>
+          </BlurFade>
         </div>
       </section>
 
