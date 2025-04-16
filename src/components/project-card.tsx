@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { Icons } from "@/components/icons"; // ✅ Import Icons
+import { Icons } from "@/components/icons"; 
 
 interface Props {
   title: string;
@@ -22,7 +22,7 @@ interface Props {
   image?: string;
   video?: string;
   links?: readonly {
-    icon: string; // ✅ changed from ReactNode to string
+    icon: string; 
     type: string;
     href: string;
   }[];
