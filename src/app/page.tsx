@@ -210,6 +210,9 @@ export default function Page() {
                   {DATA.sections.contactDescriptionLink}
                 </Link>{" "}
                 {DATA.sections.contactDescriptionEnd}
+                <br />
+                <br />
+                {DATA.contact.email}
               </p>
             </div>
           </BlurFade>
