@@ -6,6 +6,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { LangProvider, useLang } from "@/contexts/lang-context";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -60,6 +61,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Analytics />
         <LangProvider>
           <ThemeProvider attribute="class" defaultTheme="light">
             <TooltipProvider delayDuration={0}>
