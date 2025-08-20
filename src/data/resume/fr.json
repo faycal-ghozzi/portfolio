@@ -1,11 +1,11 @@
 {
     "name": "Fayçal Ghozzi",
     "initials": "FG",
-    "url": "https://fayghz.vercel.app",
-    "location": "Saint-Ouen-sur-Seine, France / Tunis, Tunisie",
-    "locationLink": "https://www.google.com/maps/place/Saint-Ouen-sur-Seine",
-    "description": "Ingénieur logiciel spécialisé dans la conception, l'optimisation et l'intégration d'applications critiques, avec une expertise approfondie en développement backend, APIs REST & SOAP, et architecture logicielle.",
-    "summary": "Actuellement responsable de l'évolution des systèmes à la Banque Tuniso-Libyenne, fournissant des solutions performantes qui améliorent la connectivité entre les plateformes et optimisent les flux de travail métier. Passionné par la résolution de défis techniques complexes et la gestion de projets.",
+    "url": "https://fayghz.com",
+    "location": "Strasbourg, France",
+    "locationLink": "https://www.google.com/maps/place/Strasbourg",
+    "description": "Ingénieur logiciel et R&D spécialisé en mobilité et applications orientées données. Solide expérience en développement backend, intégration de systèmes et conception logicielle. Maîtrise de Python, Flask, Streamlit, React.js, NoSQL et GTFS / GTFS-RT pour la création de plateformes évolutives et de solutions temps réel. Compétences en coordination de projets, accompagnement technique et support aux équipes numériques.",
+    "summary": "Actuellement impliqué dans la recherche appliquée au CESI Strasbourg sur le projet *Mon Trajet Vert*. Développement de solutions performantes avec Python, Flask, React.js, Streamlit et NoSQL, incluant le traitement de données de transport temps réel (GTFS / GTFS-RT). Passionné par la mobilité durable, l’optimisation des systèmes et l’articulation entre technique, gestion de projet et pilotage d’équipe.",
     "avatarUrl": "/me.png",
     "skills": [
       "PHP",
@@ -61,6 +61,17 @@
         }
     },
     "work": [
+        {
+        "company": "CESI",
+            "href": "https://www.montrajetvert.fr",
+            "badges": [],
+            "location": "Strasbourg, France",
+            "title": "Ingénieur R&D",
+            "logoUrl": "/cesi.png",
+            "start": "Juillet 2025",
+            "end": "Présent",
+            "description": "Recherche & développement en mobilité durable (projet : Mon Trajet Vert). Intégration des données GTFS / GTFS-RT, accompagnement des stagiaires et doctorants, coordination de l’équipe numérique, et rôle d’interlocuteur avec Emage-Me pour l’architecture et l’orientation technique. Réalisation de développements spécifiques et support technique pour le CESI Strasbourg."
+        },
       {
         "company": "Banque Tuniso-Libyenne",
         "href": "",
@@ -69,7 +80,7 @@
         "title": "Ingénieur Logiciel",
         "logoUrl": "/btl.png",
         "start": "Octobre 2024",
-        "end": "Présent",
+        "end": "Juin 2025",
         "description": "Développement d'un middleware intégrant TuniChèque avec Temenos T24 via des APIs REST & SOAP. Direction du projet de l'application BTL M Banking. Amélioration des flux de travail bancaires de 20 % et optimisation du traitement des fichiers SWIFT. Déploiement et optimisation d'applications web sur des serveurs Apache. Encadrement de stagiaires."
       },
       {
