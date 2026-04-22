@@ -4,29 +4,41 @@
     "url": "https://fayghz.com",
     "location": "Strasbourg, France",
     "locationLink": "https://www.google.com/maps/place/Strasbourg",
-    "description": "Software engineer and R&D specialist in mobility and data-driven applications. Strong background in backend development, system integration, and software design. Experienced with Python, Flask, Streamlit, React.js, NoSQL, and GTFS / GTFS-RT for building scalable platforms and real-time solutions. Skilled in project coordination, technical guidance, and supporting digital teams.",
-    "summary": "Currently contributing to applied research at CESI Strasbourg on the project *Mon Trajet Vert*. Delivering high-performance solutions with Python, Flask, React.js, Streamlit, and NoSQL, while processing real-time transit data (GTFS / GTFS-RT). Passionate about sustainable mobility, system optimization, and bridging technical work with project management and team leadership.",
+    "description": "Backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. Author of <strong>LazyKitty</strong>, an open-source Python web framework.",
+    "summary": "Backend-focused engineer with 3+ years building financial integrations, payment middleware, and scalable APIs. Proven experience connecting payment gateways via REST and SOAP, processing high-volume data pipelines, and shipping production systems in Python and PHP. Author of LazyKitty, an open-source Python web framework.",
     "avatarUrl": "/me.png",
+    "heroPills": ["Guitar", "Sim Racing", "Travel", "Gaming", "Tinkering", "Classic Cars"],
+    "heroStats": [
+        { "count": 3, "suffix": "+", "label": "Years exp." },
+        { "count": 6, "suffix": "+", "label": "Projects built" },
+        { "count": 4, "suffix": "", "label": "Companies" },
+        { "count": 3, "suffix": "", "label": "Countries" }
+    ],
+    "skillCategories": [
+        {
+            "icon": "🧠",
+            "label": "Backend",
+            "colorClass": "sk-orange",
+            "skills": ["Python", "FastAPI", "Flask", "PHP", "Laravel", "Node.js", "Java", "GraphQL", "SOAP/REST"]
+        },
+        {
+            "icon": "⚛️",
+            "label": "Frontend & Mobile",
+            "colorClass": "sk-teal",
+            "skills": ["React.js", "Next.js", "React Native", "Vue.js", "TypeScript", "JavaScript"]
+        },
+        {
+            "icon": "🗄️",
+            "label": "Data, Infra & AI",
+            "colorClass": "sk-violet",
+            "skills": ["Docker", "GCP", "PostgreSQL", "MongoDB", "GTFS/RT", "Firestore", "ROS2", "TensorRT"]
+        }
+    ],
     "skills": [
-        "PHP",
-        "JavaScript",
-        "Python",
-        "TypeScript",
-        "Java",
-        "JBase",
-        "Laravel",
-        "Flask",
-        "Symfony",
-        "React",
-        "VueJs",
-        "NextJs",
-        "Git",
-        "Docker",
-        "Selenium",
-        "MySQL",
-        "MongoDB",
-        "Agile (Scrum)",
-        "Kanban"
+        "Python", "FastAPI", "Flask", "PHP", "Laravel", "Node.js", "Java", "Spring Boot", "GraphQL", "SOAP/WSDL",
+        "React.js", "Next.js", "React Native", "Vue.js", "TypeScript", "JavaScript",
+        "Docker", "GCP", "PostgreSQL", "MySQL", "MongoDB", "SQLite", "Firestore", "GTFS/GTFS-RT",
+        "ROS2", "TensorRT", "YOLOv11", "Stripe", "Temenos T24", "Git"
     ],
     "contact": {
         "email": "faycal.ghozzi@gmail.com",
@@ -60,18 +72,26 @@
     },
     "work": [
         {
-            "company": "CESI",
+            "company": "CESI Strasbourg | Mon Trajet Vert",
             "href": "https://www.montrajetvert.fr",
             "badges": [],
             "location": "Strasbourg, France",
-            "title": "Research & Development Engineer",
+            "title": "R&D Software Engineer",
             "logoUrl": "/cesi.png",
             "start": "July 2025",
             "end": "Present",
-            "description": "Research & development on sustainable mobility (project: Mon Trajet Vert). Integrated GTFS / GTFS-RT data, supported interns and PhD students, coordinated the digital team, and acted as liaison with Emage-Me for architecture and guidance. Delivered custom development and technical support for CESI Strasbourg."
+            "description": "Lead engineer on Mon Trajet Vert, a French multi-modal mobility platform aggregating GTFS/GTFS-RT feeds from 7 cities. FastAPI backend on GCP Cloud Run with RAPTOR algorithm for journey planning.",
+            "bullets": [
+                "Lead engineer on Mon Trajet Vert, aggregating GTFS/GTFS-RT feeds from 7 cities (Strasbourg, Paris, Nantes, Lyon, Toulouse, Bordeaux, La Rochelle)",
+                "Designed FastAPI backend on GCP Cloud Run with RAPTOR algorithm for multi-modal journey planning (tram, metro, bus, train) + OSM pedestrian graph for walking transfers",
+                "Built memory-efficient GTFS ingestion pipeline processing 20M+ rows across simultaneous providers, with fault tolerance and daily automated sync",
+                "Integrated Firestore via GraphQL API; handled GTFS edge cases: overnight trips, public holiday calendars, route colour normalisation",
+                "Coordinated architecture decisions with Emage-Me; mentored interns and PhD students"
+            ],
+            "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GTFS/GTFS-RT"
         },
         {
-            "company": "Banque Tuniso-Libyenne",
+            "company": "Banque Tuniso-Libyenne (BTL)",
             "href": "",
             "badges": [],
             "location": "Tunis, Tunisia",
@@ -79,7 +99,14 @@
             "logoUrl": "/btl.png",
             "start": "October 2024",
             "end": "June 2025",
-            "description": "Developed a middleware integrating TuniChèque with Temenos T24 via REST & SOAP APIs. Led the BTL M Banking app project. Improved banking workflows by 20% and enhanced SWIFT file handling. Deployed and optimized web apps on Apache servers. Mentored interns."
+            "description": "Architected the BTL payment middleware connecting TuniCheque to Temenos T24 R11 via SOAP. System handles 1,000+ daily cheque reservation transactions.",
+            "bullets": [
+                "Architected BTL payment middleware: TuniCheque → Temenos T24 R11 via SOAP (OFS messages), handles 1,000+ daily cheque reservation transactions",
+                "Built real-time monitoring dashboard with full transaction audit logging and traceability for banking staff",
+                "Led BTL M Banking mobile app end-to-end; improved banking workflows by 20%; optimised SWIFT message handling",
+                "Delivered BTL-Synthese: modular app to digitise and validate client balance sheets and income statements for credit risk assessment"
+            ],
+            "stack": "Laravel 9 · PHP 8.3 · MySQL · Temenos T24 · TailwindCSS · JBase · REST API · SOAP"
         },
         {
             "company": "Hortensia Agency",
@@ -90,7 +117,12 @@
             "logoUrl": "/hortensia_agency.png",
             "start": "May 2024",
             "end": "October 2024",
-            "description": "Built 'Project Curve', a predictive analytics tool using sigmoid equations. Integrated Stripe. Maintained feature stability and mentored interns."
+            "description": "Optimised backend and feature stability on Project Curve, a predictive analytics platform using sigmoid-based financial modelling. Integrated Stripe with webhook-based billing.",
+            "bullets": [
+                "Optimised backend and contributed to feature stability on Project Curve, a sigmoid-based financial modelling platform",
+                "Integrated Stripe payment gateway: free/paid subscription tiers with webhook-based billing lifecycle management"
+            ],
+            "stack": "React.js · Stripe · MongoDB · Flask"
         },
         {
             "company": "7Systems GmbH",
@@ -98,15 +130,20 @@
             "badges": [],
             "location": "Gummersbach, Germany",
             "title": "Software Engineer",
-            "logoUrl": "7s.png",
+            "logoUrl": "/7s.png",
             "start": "February 2023",
             "end": "April 2024",
-            "description": "Expanded bmacloud.de platform. Migrated frontend to React.js. Improved productivity by 30% and implemented robust test automation."
+            "description": "Expanded and stabilised the bmacloud.de SaaS platform. Migrated legacy frontend to React.js. Improved team productivity by 30% through test automation and CI/CD.",
+            "bullets": [
+                "Expanded and stabilised the bmacloud.de SaaS platform",
+                "Migrated legacy frontend to React.js; improved team productivity by 30% through test automation and CI/CD improvements"
+            ],
+            "stack": "React.js · PHP 7.4"
         }
     ],
     "education": [
         {
-            "school": "École Supérieure Privée d’Ingénierie et de Technologies (ESPRIT)",
+            "school": "École Supérieure Privée d'Ingénierie et de Technologies (ESPRIT)",
             "href": "https://esprit.tn",
             "degree": "National Engineering Degree in Computer Science",
             "logoUrl": "/esprit.jpg",
@@ -116,128 +153,93 @@
     ],
     "projects": [
         {
+            "title": "LazyKitty – Python Web Framework",
+            "href": "",
+            "dates": "",
+            "active": true,
+            "description": "Open-source Python reactive web framework that renders full-stack UIs over persistent WebSockets with no JavaScript or HTML templates required. File-based routing à la Next.js, declarative component API (Column, Row, Card, Table, Form...), server-side session state, and a built-in SQLite migration engine.",
+            "technologies": ["Python", "Starlette", "WebSockets", "uvicorn", "morphdom"],
+            "links": [
+                { "type": "GitHub", "href": "https://github.com/faycal-ghozzi", "icon": "github" }
+            ],
+            "image": "",
+            "video": "",
+            "icon": "🐱",
+            "logoUrl": "/lk.png",
+            "badge": "Open Source"
+        },
+        {
+            "title": "Real-Time AI Drone Perception System",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "End-to-end autonomous drone perception platform. Custom YOLOv11 + TensorRT FP16 on NVIDIA Jetson Orin streams detections live to a React/TypeScript operator dashboard. Modular ROS2 pipeline with centroid-based multi-object tracking, persistent IDs, and GPS/IMU telemetry visualisation.",
+            "technologies": ["Python", "ROS2", "YOLOv11", "TensorRT", "GStreamer", "Flask", "React", "TypeScript", "Jetson Orin"],
+            "links": [],
+            "image": "",
+            "video": "",
+            "icon": "🚁"
+        },
+        {
+            "title": "Real-Time GPS Tracking System",
+            "href": "",
+            "dates": "",
+            "active": false,
+            "description": "Full-stack GPS tracking platform: Android app (React Native/TypeScript) streams positions over WebSocket with offline buffering and auto-sync. Web dashboard renders live trajectories on Leaflet with session management, tag-based filtering, JWT auth, and multi-device tracking. Deployed on Linux via Docker.",
+            "technologies": ["React Native", "TypeScript", "Node.js", "Express", "Socket.IO", "SQLite", "Leaflet", "JWT", "Docker"],
+            "links": [],
+            "image": "",
+            "video": "",
+            "icon": "📍"
+        },
+        {
             "title": "Tic-Tac-Two – Multiplayer Online Game",
             "href": "https://tic-tac-two-phi.vercel.app/",
             "dates": "",
             "active": true,
-            "description": "Created a two-turn-per-round multiplayer Tic-Tac-Toe game with real-time WebSocket communication. Deployed using Vercel and Render. Built to sharpen full-stack engineering skills.",
-            "technologies": [
-                "Next.js",
-                "TypeScript",
-                "Node.js",
-                "WebSockets"
-            ],
+            "description": "Full-stack multiplayer Tic-Tac-Toe with a twist: two moves per turn. Real-time WebSocket communication, deployed on Vercel and Render.",
+            "technologies": ["Next.js", "TypeScript", "Node.js", "WebSockets"],
             "links": [
-                {
-                "type": "Website",
-                "href": "https://tic-tac-two-phi.vercel.app/",
-                "icon": "globe"
-                },
-                {
-                "type": "Source",
-                "href": "https://github.com/faycal-ghozzi/tic-tac-two",
-                "icon": "github"
-                }
+                { "type": "Live Demo", "href": "https://tic-tac-two-phi.vercel.app/", "icon": "globe" },
+                { "type": "GitHub", "href": "https://github.com/faycal-ghozzi/tic-tac-two", "icon": "github" }
             ],
             "image": "",
-            "video": "/tictactwo.mov"
+            "video": "/tictactwo.mov",
+            "icon": "🎮"
         },
         {
-            "title": "Middleware-BTL – Core Banking Integration System",
+            "title": "Middleware-BTL – Core Banking Integration",
             "href": "",
             "dates": "",
             "active": false,
-            "description": "Developed a robust middleware solution that connects the Tunicheques application with the global banking core (Temenos T24). REST APIs are used to communicate with Tunicheques, while SOAP is used for integration with Temenos, handling OFS messages for cheque reservations. Includes a detailed logging system for transaction traceability and a dashboard for real-time monitoring by banking staff.",
-            "technologies": [
-                "PHP 8.3",
-                "JBase",
-                "MySQL",
-                "REST API",
-                "SOAP",
-                "JSON",
-                "XML",
-                "Temenos T24"
-            ],
+            "description": "Production middleware connecting TuniChèques to Temenos T24 R11 via SOAP (OFS messages) with a REST API layer for internal consumers. Handles 1,000+ daily transactions with full audit logging and a real-time monitoring dashboard.",
+            "technologies": ["PHP 8.3", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
             "links": [],
             "image": "/tunicheques.png",
-            "video": ""
+            "video": "",
+            "icon": "🏦",
+            "logoUrl": "/btl.png",
+            "badge": "Production"
         },
         {
-            "title": "BTL-Synthèse – Financial Statement Analysis Tool",
+            "title": "BTL-Synthèse – Financial Statement Analyzer",
             "href": "",
             "dates": "",
             "active": false,
-            "description": "Built a dynamic, modular application to digitalize and analyze clients’ financial statements. It facilitates rapid validation of balance sheets and income statements, speeding up the risk assessment process. The system allows flexible customization of financial rows, with validation logic for assets, liabilities, and fiscal results to ensure accuracy before further processing.",
-            "technologies": [
-                "Laravel 9",
-                "MySQL",
-                "TailwindCSS"
-            ],
+            "description": "Modular app to digitise and validate client balance sheets and income statements. Configurable financial row logic, automatic validation of assets/liabilities/fiscal results, accelerating credit risk assessment.",
+            "technologies": ["Laravel 9", "MySQL", "TailwindCSS"],
             "links": [],
             "image": "/btl-synthese.png",
-            "video": ""
-        },
-        {
-            "title": "NewsFEED – Real-Time News Aggregator",
-            "href": "",
-            "dates": "",
-            "active": false,
-            "description": "Developed a Flutter application that fetches and displays real-time news articles using the NewsAPI. The app allows users to browse top headlines, search for specific topics, and filter news by categories.",
-            "technologies": [
-                "Flutter",
-                "Dart",
-                "REST API",
-                "NewsAPI",
-                "Hive"
-            ],
-            "links": [
-                {
-                    "type": "Source",
-                    "href": "https://github.com/faycal-ghozzi/NewsAPI_Flutter",
-                    "icon": "github"
-                }
-            ],
-            "image": "/newsfeed.gif",
-            "video": ""
-        },
-        {
-            "title": "Velotn – Smart Bike Sharing Platform",
-            "href": "",
-            "dates": "",
-            "active": false,
-            "description": "Developed a comprehensive bike-sharing platform with web and mobile applications, including real-time tracking and user management.",
-            "technologies": [
-                "Java",
-                "JavaScript",
-                "Spring Boot",
-                "React",
-                "Android"
-            ],
-            "links": [
-                {
-                "type": "Web App",
-                "href": "https://github.com/faycal-ghozzi/velotnWeb",
-                "icon": "github"
-                },
-                {
-                "type": "Mobile App",
-                "href": "https://github.com/faycal-ghozzi/velotnMobile",
-                "icon": "github"
-                },
-                {
-                "type": "Dashboard",
-                "href": "https://github.com/faycal-ghozzi/VelotnDash",
-                "icon": "github"
-                }
-            ],
-            "image": "/velotn.png",
-            "video": ""
+            "video": "",
+            "icon": "📊",
+            "logoUrl": "/btl.png",
+            "badge": "Production"
         }
     ],
     "certifications": [
         {
             "title": "Software Testing and Automation Specialization",
-            "description": "An ongoing specialization focused on best practices in software testing, automation frameworks, and test-driven development. Covers both theory and real-world application of quality assurance in modern software development.",
+            "description": "Ongoing specialization covering best practices in software testing, automation frameworks, and TDD. Bridges theory and real-world QA in modern software development.",
             "date": "In Progress",
             "location": "Remote",
             "image": "/coursera.png",
@@ -245,26 +247,26 @@
         },
         {
             "title": "Artificial Intelligence Course",
-            "description": "A comprehensive program by Samsung Innovation Campus covering the fundamentals of AI, machine learning, and data processing techniques. Emphasizes practical implementation using real-world datasets and scenarios.",
+            "description": "Comprehensive program by Samsung Innovation Campus covering AI fundamentals, machine learning, and data processing with real-world datasets.",
             "date": "February 2025",
             "location": "Remote",
             "image": "/samsung.webp",
             "links": []
         },
         {
-            "title": "Intermediate Python",
-            "description": "A hands-on course from DataCamp designed to strengthen Python skills, covering topics like list comprehensions, lambda functions, error handling, and working with external libraries.",
-            "date": "January 2022",
-            "location": "Remote",
-            "image": "/datacamp.svg",
-            "links": []
-        },
-        {
             "title": "Fundamentals of Deep Learning",
-            "description": "A foundational course from NVIDIA that introduces the core principles of deep learning, neural networks, and GPU-accelerated computing using frameworks such as TensorFlow and PyTorch.",
+            "description": "NVIDIA course introducing deep learning, neural networks, and GPU-accelerated computing with TensorFlow and PyTorch.",
             "date": "October 2021",
             "location": "Remote",
             "image": "/nvidia.png",
+            "links": []
+        },
+        {
+            "title": "Intermediate Python",
+            "description": "Hands-on DataCamp course covering list comprehensions, lambda functions, error handling, and external libraries.",
+            "date": "January 2022",
+            "location": "Remote",
+            "image": "/datacamp.svg",
             "links": []
         }
     ],
@@ -275,17 +277,59 @@
         "education": "Education",
         "skills": "Skills",
         "projectsLabel": "My Projects",
-        "projectsTitle": "Check out my latest work",
-        "projectsDescription": "I've worked on a variety of projects...",
-        "certificationsLabel": "Certifications & Realizations",
-        "certificationsTitle": "Courses, Projects & Achievements",
-        "certificationsDescription": "A collection of certifications, programs, and other accomplishments that reflect my continuous learning and hands-on experience.",
+        "projectsTitle": "Things I've built",
+        "projectsDescription": "From open-source frameworks to AI drone systems and production fintech integrations.",
+        "certificationsLabel": "Certifications",
+        "certificationsTitle": "Continuous Learning",
+        "certificationsDescription": "Certifications and programs reflecting my commitment to growth.",
         "contact": "Contact",
-        "contactTitle": "Get in Touch",
-        "contactDescriptionStart": "Got a question or just want to say hi?",
+        "contactTitle": "Let's build something <em>great</em> together",
+        "contactDescriptionStart": "Got a question or want to collaborate?",
         "contactDescriptionLink": "Send me an email",
-        "contactDescriptionEnd": "and I’ll get back to you as soon as I can.",
-        "present": "Present"
+        "contactDescriptionEnd": "and I'll get back to you within 24 hours.",
+        "present": "Present",
+        "heroEyebrow": "Open to opportunities · Strasbourg, France",
+        "heroH1a": "I'm a",
+        "heroH1b": "software",
+        "heroH1c": "engineer",
+        "heroCta1": "👀 See My Work",
+        "heroCta2": "💬 Let's Chat",
+        "aboutAvailable": "Open to work",
+        "aboutTitle": "Engineer & builder at heart",
+        "aboutP1": "Hey! I'm Fayçal, a backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. I ship production systems in Python, PHP and React.js.",
+        "aboutP2": "My work spans <strong>core banking middleware, real-time data pipelines, and autonomous perception systems</strong>. I care about code that's fast, reliable, and that teammates can extend without fear.",
+        "aboutP3": "Currently lead engineer on <em>Mon Trajet Vert</em> at CESI Strasbourg, processing 20M+ GTFS rows across 7 cities.",
+        "aboutP4": "Author of <em>LazyKitty</em>, an open-source Python web framework.",
+        "aboutChip1": "OSS Framework Author",
+        "aboutChip2": "Mobility R&D",
+        "aboutChip3": "Fintech Builder",
+        "aboutChip4": "Embedded AI",
+        "aboutChip5": "Full-Stack",
+        "aboutResume": "📄 Download Resume",
+        "skillsBadge": "Skills",
+        "skillsTitle": "What I work with",
+        "skillsSub": "From banking middleware to autonomous drone perception. Here's the toolkit.",
+        "expBadge": "Experience",
+        "expTitle": "Where I've worked",
+        "expSub": "My professional journey so far.",
+        "eduBadge": "Education",
+        "eduTitle": "Academic Background",
+        "eduSub": "Where I built my foundations.",
+        "certBadge": "Certifications",
+        "certTitle": "Continuous Learning",
+        "certSub": "Courses and certifications that reflect my commitment to growth.",
+        "contactSub": "Open to engineering roles and interesting projects. I usually reply within 24 hours. Let's talk!",
+        "contactNameLabel": "Name",
+        "contactNamePh": "Your name",
+        "contactEmailLabel": "Email",
+        "contactSubjectLabel": "Subject",
+        "contactSubjectPh": "What's this about?",
+        "contactMessageLabel": "Message",
+        "contactMessagePh": "Tell me about your project...",
+        "contactSend": "Send Message ✉️",
+        "contactSent": "Sent! 🎉",
+        "footerMade": "Made with ❤️ in Strasbourg",
+        "footerBuilt": "Built by Fayçal Ghozzi",
+        "hireMe": "Hire me ✨"
     }
 }
-  

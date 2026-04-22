@@ -1,88 +1,207 @@
 "use client";
 
-import { Dock, DockIcon } from "@/components/magicui/dock";
-import { ModeToggle } from "@/components/mode-toggle";
-import { buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { Icons } from "@/components/icons";
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 import { useLang } from "@/contexts/lang-context";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const { DATA, lang, setLang } = useLang();
+  const { theme, setTheme } = useTheme();
+  const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
 
-  const toggleLang = () => {
-    setLang(lang === "en" ? "fr" : "en");
-  };
+  useEffect(() => {
+    const handler = () => {
+      setScrolled(window.scrollY > 60);
+      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      setProgress(Math.min(pct, 1));
+    };
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
+
+  const s = DATA.sections;
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14">
-      <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
-      <Dock className="z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-1 bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] ">
-        {Object.entries(DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
-          .map(([name, social]) => {
-            const IconComponent = Icons[social.icon as keyof typeof Icons];
-            return (
-              <DockIcon key={name}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link
-                      href={social.url}
-                      className={cn(
-                        buttonVariants({ variant: "ghost", size: "icon" }),
-                        "size-12"
-                      )}
-                    >
-                      {IconComponent && <IconComponent className="size-4" />}
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{social.name}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </DockIcon>
-            );
-          })}
+    <>
+      {/* Scroll progress bar */}
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: "3px",
+          zIndex: 9999,
+          background: "linear-gradient(to right, var(--pg-primary), var(--pg-teal), var(--pg-violet))",
+          transformOrigin: "left",
+          transform: `scaleX(${progress})`,
+          transition: "transform 0.1s linear",
+          pointerEvents: "none",
+        }}
+      />
 
-        <Separator orientation="vertical" className="h-full py-2" />
+      {/* Navbar */}
+      <nav
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1000,
+          height: "70px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "0 40px",
+          transition: "background 0.4s, box-shadow 0.4s",
+          background: scrolled
+            ? theme === "dark"
+              ? "rgba(19,17,26,0.88)"
+              : "rgba(250,249,246,0.88)"
+            : "transparent",
+          backdropFilter: scrolled ? "blur(16px)" : "none",
+          boxShadow: scrolled ? "0 1px 0 var(--pg-border)" : "none",
+        }}
+      >
+        {/* Logo */}
+        <Link
+          href="#home"
+          style={{
+            fontFamily: "var(--font-display), Nunito, sans-serif",
+            fontWeight: 900,
+            fontSize: "22px",
+            color: "var(--pg-primary)",
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
+          <Image src="/logo.png" alt="logo" width={28} height={28} className="pg-logo-pulse" style={{ display: "block" }} />
+        </Link>
 
-        <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <button
-                onClick={toggleLang}
-                className={cn(
-                  buttonVariants({ variant: "ghost", size: "icon" }),
-                  "size-12"
-                )}
+        {/* Nav links — hidden on mobile */}
+        <ul
+          className="hidden sm:flex"
+          style={{ gap: "4px", listStyle: "none", margin: 0, padding: 0 }}
+        >
+          {[
+            { href: "#about",       label: s.about },
+            { href: "#skills",      label: s.skillsBadge },
+            { href: "#projects",    label: s.projectsLabel },
+            { href: "#experience",  label: s.expBadge },
+            { href: "#contact",     label: s.hireMe, cta: true },
+          ].map(({ href, label, cta }) => (
+            <li key={href}>
+              <a
+                href={href}
+                style={{
+                  color: cta ? "white" : "var(--pg-text2)",
+                  textDecoration: "none",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  padding: "7px 14px",
+                  borderRadius: "100px",
+                  transition: "all 0.2s",
+                  background: cta ? "var(--pg-primary)" : "transparent",
+                  boxShadow: cta ? "0 4px 14px rgba(255,107,53,0.3)" : "none",
+                  display: "inline-block",
+                }}
+                onMouseEnter={(e) => {
+                  if (!cta) {
+                    (e.currentTarget as HTMLElement).style.color = "var(--pg-text)";
+                    (e.currentTarget as HTMLElement).style.background = "var(--pg-surface2)";
+                  } else {
+                    (e.currentTarget as HTMLElement).style.opacity = "0.9";
+                    (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!cta) {
+                    (e.currentTarget as HTMLElement).style.color = "var(--pg-text2)";
+                    (e.currentTarget as HTMLElement).style.background = "transparent";
+                  } else {
+                    (e.currentTarget as HTMLElement).style.opacity = "1";
+                    (e.currentTarget as HTMLElement).style.transform = "none";
+                  }
+                }}
               >
-                {lang === "en" ? "🇫🇷" : "🇬🇧"}
-              </button>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{lang === "en" ? "Passer en Français" : "Switch to English"}</p>
-            </TooltipContent>
-          </Tooltip>
-        </DockIcon>
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-        <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <ModeToggle />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Theme</p>
-            </TooltipContent>
-          </Tooltip>
-        </DockIcon>
-      </Dock>
-    </div>
+        {/* Right controls */}
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          {/* Lang switcher */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "4px",
+              background: "var(--pg-surface)",
+              border: "1.5px solid var(--pg-border)",
+              borderRadius: "100px",
+              padding: "4px",
+            }}
+          >
+            {(["en", "fr"] as const).map((l) => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                style={{
+                  padding: "5px 12px",
+                  borderRadius: "100px",
+                  border: "none",
+                  background: lang === l ? "var(--pg-primary)" : "transparent",
+                  color: lang === l ? "white" : "var(--pg-text2)",
+                  cursor: "pointer",
+                  fontFamily: "var(--font-sans)",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  transition: "all 0.2s",
+                  boxShadow: lang === l ? "0 2px 8px rgba(255,107,53,0.3)" : "none",
+                }}
+              >
+                {l === "en" ? "🇬🇧 EN" : "🇫🇷 FR"}
+              </button>
+            ))}
+          </div>
+
+          {/* Theme toggle */}
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            aria-label="Toggle theme"
+            style={{
+              width: "44px",
+              height: "44px",
+              borderRadius: "50%",
+              border: "2px solid var(--pg-border)",
+              background: "var(--pg-surface)",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "18px",
+              transition: "all 0.3s",
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.transform = "rotate(20deg) scale(1.1)";
+              (e.currentTarget as HTMLElement).style.borderColor = "var(--pg-primary)";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLElement).style.transform = "none";
+              (e.currentTarget as HTMLElement).style.borderColor = "var(--pg-border)";
+            }}
+          >
+            {theme === "dark" ? "☀️" : "🌙"}
+          </button>
+        </div>
+      </nav>
+    </>
   );
 }
