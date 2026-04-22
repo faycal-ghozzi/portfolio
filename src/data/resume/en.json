@@ -1,12 +1,5 @@
 {
-    "name": "Fayçal Ghozzi",
-    "initials": "FG",
-    "url": "https://fayghz.com",
-    "location": "Strasbourg, France",
-    "locationLink": "https://www.google.com/maps/place/Strasbourg",
     "description": "Backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. Author of <strong>LazyKitty</strong>, an open-source Python web framework.",
-    "summary": "Backend-focused engineer with 3+ years building financial integrations, payment middleware, and scalable APIs. Proven experience connecting payment gateways via REST and SOAP, processing high-volume data pipelines, and shipping production systems in Python and PHP. Author of LazyKitty, an open-source Python web framework.",
-    "avatarUrl": "/me.png",
     "heroPills": ["Guitar", "Sim Racing", "Travel", "Gaming", "Tinkering", "Classic Cars"],
     "heroStats": [
         { "count": 3, "suffix": "+", "label": "Years exp." },
@@ -34,48 +27,18 @@
             "skills": ["Docker", "GCP", "PostgreSQL", "MongoDB", "GTFS/RT", "Firestore", "ROS2", "TensorRT"]
         }
     ],
-    "skills": [
-        "Python", "FastAPI", "Flask", "PHP", "Laravel", "Node.js", "Java", "Spring Boot", "GraphQL", "SOAP/WSDL",
-        "React.js", "Next.js", "React Native", "Vue.js", "TypeScript", "JavaScript",
-        "Docker", "GCP", "PostgreSQL", "MySQL", "MongoDB", "SQLite", "Firestore", "GTFS/GTFS-RT",
-        "ROS2", "TensorRT", "YOLOv11", "Stripe", "Temenos T24", "Git"
-    ],
     "contact": {
         "email": "faycal.ghozzi@gmail.com",
-        "tel": "+33 (0) 7 63 59 68 73",
         "social": {
-            "GitHub": {
-                "name": "GitHub",
-                "url": "https://github.com/faycal-ghozzi",
-                "icon": "github",
-                "navbar": true
-            },
-            "LinkedIn": {
-                "name": "LinkedIn",
-                "url": "https://www.linkedin.com/in/faycal-ghozzi/",
-                "icon": "linkedin",
-                "navbar": true
-            },
-            "X": {
-                "name": "X",
-                "url": "https://x.com/fayghz",
-                "icon": "x",
-                "navbar": true
-            },
-            "email": {
-                "name": "Send Email",
-                "url": "mailto:faycal.ghozzi@gmail.com",
-                "icon": "email",
-                "navbar": true
-            }
+            "GitHub": { "url": "https://github.com/faycal-ghozzi" },
+            "LinkedIn": { "url": "https://www.linkedin.com/in/faycal-ghozzi/" },
+            "X": { "url": "https://x.com/fayghz" }
         }
     },
     "work": [
         {
             "company": "CESI Strasbourg | Mon Trajet Vert",
             "href": "https://www.montrajetvert.fr",
-            "badges": [],
-            "location": "Strasbourg, France",
             "title": "R&D Software Engineer",
             "logoUrl": "/cesi.png",
             "start": "July 2025",
@@ -93,8 +56,6 @@
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
             "href": "",
-            "badges": [],
-            "location": "Tunis, Tunisia",
             "title": "Software Engineer",
             "logoUrl": "/btl.png",
             "start": "October 2024",
@@ -111,8 +72,6 @@
         {
             "company": "Hortensia Agency",
             "href": "",
-            "badges": [],
-            "location": "Remote",
             "title": "Software Engineer",
             "logoUrl": "/hortensia_agency.png",
             "start": "May 2024",
@@ -127,8 +86,6 @@
         {
             "company": "7Systems GmbH",
             "href": "https://bmacloud.de",
-            "badges": [],
-            "location": "Gummersbach, Germany",
             "title": "Software Engineer",
             "logoUrl": "/7s.png",
             "start": "February 2023",
@@ -155,15 +112,11 @@
         {
             "title": "LazyKitty – Python Web Framework",
             "href": "",
-            "dates": "",
-            "active": true,
             "description": "Open-source Python reactive web framework that renders full-stack UIs over persistent WebSockets with no JavaScript or HTML templates required. File-based routing à la Next.js, declarative component API (Column, Row, Card, Table, Form...), server-side session state, and a built-in SQLite migration engine.",
             "technologies": ["Python", "Starlette", "WebSockets", "uvicorn", "morphdom"],
             "links": [
                 { "type": "GitHub", "href": "https://github.com/faycal-ghozzi", "icon": "github" }
             ],
-            "image": "",
-            "video": "",
             "icon": "🐱",
             "logoUrl": "/lk.png",
             "badge": "Open Source"
@@ -171,52 +124,36 @@
         {
             "title": "Real-Time AI Drone Perception System",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "End-to-end autonomous drone perception platform. Custom YOLOv11 + TensorRT FP16 on NVIDIA Jetson Orin streams detections live to a React/TypeScript operator dashboard. Modular ROS2 pipeline with centroid-based multi-object tracking, persistent IDs, and GPS/IMU telemetry visualisation.",
             "technologies": ["Python", "ROS2", "YOLOv11", "TensorRT", "GStreamer", "Flask", "React", "TypeScript", "Jetson Orin"],
             "links": [],
-            "image": "",
-            "video": "",
             "icon": "🚁"
         },
         {
             "title": "Real-Time GPS Tracking System",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "Full-stack GPS tracking platform: Android app (React Native/TypeScript) streams positions over WebSocket with offline buffering and auto-sync. Web dashboard renders live trajectories on Leaflet with session management, tag-based filtering, JWT auth, and multi-device tracking. Deployed on Linux via Docker.",
             "technologies": ["React Native", "TypeScript", "Node.js", "Express", "Socket.IO", "SQLite", "Leaflet", "JWT", "Docker"],
             "links": [],
-            "image": "",
-            "video": "",
             "icon": "📍"
         },
         {
             "title": "Tic-Tac-Two – Multiplayer Online Game",
             "href": "https://tic-tac-two-phi.vercel.app/",
-            "dates": "",
-            "active": true,
             "description": "Full-stack multiplayer Tic-Tac-Toe with a twist: two moves per turn. Real-time WebSocket communication, deployed on Vercel and Render.",
             "technologies": ["Next.js", "TypeScript", "Node.js", "WebSockets"],
             "links": [
                 { "type": "Live Demo", "href": "https://tic-tac-two-phi.vercel.app/", "icon": "globe" },
                 { "type": "GitHub", "href": "https://github.com/faycal-ghozzi/tic-tac-two", "icon": "github" }
             ],
-            "image": "",
-            "video": "/tictactwo.mov",
             "icon": "🎮"
         },
         {
             "title": "Middleware-BTL – Core Banking Integration",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "Production middleware connecting TuniChèques to Temenos T24 R11 via SOAP (OFS messages) with a REST API layer for internal consumers. Handles 1,000+ daily transactions with full audit logging and a real-time monitoring dashboard.",
             "technologies": ["PHP 8.3", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
             "links": [],
-            "image": "/tunicheques.png",
-            "video": "",
             "icon": "🏦",
             "logoUrl": "/btl.png",
             "badge": "Production"
@@ -224,13 +161,9 @@
         {
             "title": "BTL-Synthèse – Financial Statement Analyzer",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "Modular app to digitise and validate client balance sheets and income statements. Configurable financial row logic, automatic validation of assets/liabilities/fiscal results, accelerating credit risk assessment.",
             "technologies": ["Laravel 9", "MySQL", "TailwindCSS"],
             "links": [],
-            "image": "/btl-synthese.png",
-            "video": "",
             "icon": "📊",
             "logoUrl": "/btl.png",
             "badge": "Production"
@@ -241,37 +174,29 @@
             "title": "Software Testing and Automation Specialization",
             "description": "Ongoing specialization covering best practices in software testing, automation frameworks, and TDD. Bridges theory and real-world QA in modern software development.",
             "date": "In Progress",
-            "location": "Remote",
-            "image": "/coursera.png",
-            "links": []
+            "image": "/coursera.png"
         },
         {
             "title": "Artificial Intelligence Course",
             "description": "Comprehensive program by Samsung Innovation Campus covering AI fundamentals, machine learning, and data processing with real-world datasets.",
             "date": "February 2025",
-            "location": "Remote",
-            "image": "/samsung.webp",
-            "links": []
+            "image": "/samsung.webp"
         },
         {
             "title": "Fundamentals of Deep Learning",
             "description": "NVIDIA course introducing deep learning, neural networks, and GPU-accelerated computing with TensorFlow and PyTorch.",
             "date": "October 2021",
-            "location": "Remote",
-            "image": "/nvidia.png",
-            "links": []
+            "image": "/nvidia.png"
         },
         {
             "title": "Intermediate Python",
             "description": "Hands-on DataCamp course covering list comprehensions, lambda functions, error handling, and external libraries.",
             "date": "January 2022",
-            "location": "Remote",
-            "image": "/datacamp.svg",
-            "links": []
+            "image": "/datacamp.svg"
         }
     ],
     "sections": {
-        "hello": "Hi, I'm Fayçal",
+        "hello": "Hi, I'm",
         "about": "About",
         "work": "Work Experience",
         "education": "Education",
@@ -284,12 +209,9 @@
         "certificationsDescription": "Certifications and programs reflecting my commitment to growth.",
         "contact": "Contact",
         "contactTitle": "Let's build something <em>great</em> together",
-        "contactDescriptionStart": "Got a question or want to collaborate?",
-        "contactDescriptionLink": "Send me an email",
-        "contactDescriptionEnd": "and I'll get back to you within 24 hours.",
         "present": "Present",
         "heroEyebrow": "Open to opportunities · Strasbourg, France",
-        "heroH1a": "I'm a",
+        "heroH1a": "I'm Fayçal, a",
         "heroH1b": "software",
         "heroH1c": "engineer",
         "heroCta1": "👀 See My Work",
@@ -328,7 +250,6 @@
         "contactMessagePh": "Tell me about your project...",
         "contactSend": "Send Message ✉️",
         "contactSent": "Sent! 🎉",
-        "footerMade": "Made with ❤️ in Strasbourg",
         "footerBuilt": "Built by Fayçal Ghozzi",
         "hireMe": "Hire me ✨"
     }

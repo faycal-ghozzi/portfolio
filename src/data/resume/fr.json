@@ -1,12 +1,5 @@
 {
-    "name": "Fayçal Ghozzi",
-    "initials": "FG",
-    "url": "https://fayghz.com",
-    "location": "Strasbourg, France",
-    "locationLink": "https://www.google.com/maps/place/Strasbourg",
     "description": "Ingénieur backend avec <strong>3+ ans</strong> d'expérience dans les intégrations financières, middleware de paiement et APIs scalables. Auteur de <strong>LazyKitty</strong>, un framework web Python open-source.",
-    "summary": "Ingénieur fullstack orienté backend avec 3+ ans d'expérience dans les intégrations financières, middleware de paiement et APIs scalables. Maîtrise Python, PHP, React.js et pipelines de données temps réel. Auteur de LazyKitty, un framework web Python open-source.",
-    "avatarUrl": "/me.png",
     "heroPills": ["Guitare", "Sim Racing", "Voyages", "Gaming", "Bidouillage", "Voitures Classiques"],
     "heroStats": [
         { "count": 3, "suffix": "+", "label": "Ans d'exp." },
@@ -34,48 +27,18 @@
             "skills": ["Docker", "GCP", "PostgreSQL", "MongoDB", "GTFS/RT", "Firestore", "ROS2", "TensorRT"]
         }
     ],
-    "skills": [
-        "Python", "FastAPI", "Flask", "PHP", "Laravel", "Node.js", "Java", "Spring Boot", "GraphQL", "SOAP/WSDL",
-        "React.js", "Next.js", "React Native", "Vue.js", "TypeScript", "JavaScript",
-        "Docker", "GCP", "PostgreSQL", "MySQL", "MongoDB", "SQLite", "Firestore", "GTFS/GTFS-RT",
-        "ROS2", "TensorRT", "YOLOv11", "Stripe", "Temenos T24", "Git"
-    ],
     "contact": {
         "email": "faycal.ghozzi@gmail.com",
-        "tel": "+33 (0) 7 63 59 68 73",
         "social": {
-            "GitHub": {
-                "name": "GitHub",
-                "url": "https://github.com/faycal-ghozzi",
-                "icon": "github",
-                "navbar": true
-            },
-            "LinkedIn": {
-                "name": "LinkedIn",
-                "url": "https://www.linkedin.com/in/faycal-ghozzi/",
-                "icon": "linkedin",
-                "navbar": true
-            },
-            "X": {
-                "name": "X",
-                "url": "https://x.com/fayghz",
-                "icon": "x",
-                "navbar": true
-            },
-            "email": {
-                "name": "Send Email",
-                "url": "mailto:faycal.ghozzi@gmail.com",
-                "icon": "email",
-                "navbar": true
-            }
+            "GitHub": { "url": "https://github.com/faycal-ghozzi" },
+            "LinkedIn": { "url": "https://www.linkedin.com/in/faycal-ghozzi/" },
+            "X": { "url": "https://x.com/fayghz" }
         }
     },
     "work": [
         {
             "company": "CESI Strasbourg | Mon Trajet Vert",
             "href": "https://www.montrajetvert.fr",
-            "badges": [],
-            "location": "Strasbourg, France",
             "title": "Ingénieur R&D",
             "logoUrl": "/cesi.png",
             "start": "Juillet 2025",
@@ -93,8 +56,6 @@
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
             "href": "",
-            "badges": [],
-            "location": "Tunis, Tunisie",
             "title": "Ingénieur Logiciel",
             "logoUrl": "/btl.png",
             "start": "Octobre 2024",
@@ -111,8 +72,6 @@
         {
             "company": "Hortensia Agency",
             "href": "",
-            "badges": [],
-            "location": "Télétravail",
             "title": "Ingénieur Logiciel",
             "logoUrl": "/hortensia_agency.png",
             "start": "Mai 2024",
@@ -127,8 +86,6 @@
         {
             "company": "7Systems GmbH",
             "href": "https://bmacloud.de",
-            "badges": [],
-            "location": "Gummersbach, Allemagne",
             "title": "Ingénieur Logiciel",
             "logoUrl": "/7s.png",
             "start": "Février 2023",
@@ -155,15 +112,11 @@
         {
             "title": "LazyKitty – Framework Web Python",
             "href": "",
-            "dates": "",
-            "active": true,
             "description": "Framework web Python open-source rendant des interfaces full-stack via WebSockets persistants, sans JavaScript ni templates HTML. Routage basé sur les fichiers à la Next.js, API de composants déclaratifs (Column, Row, Card, Table, Form...), état de session côté serveur, et moteur de migrations SQLite intégré.",
             "technologies": ["Python", "Starlette", "WebSockets", "uvicorn", "morphdom"],
             "links": [
                 { "type": "GitHub", "href": "https://github.com/faycal-ghozzi", "icon": "github" }
             ],
-            "image": "",
-            "video": "",
             "icon": "🐱",
             "logoUrl": "/lk.png",
             "badge": "Open Source"
@@ -171,52 +124,36 @@
         {
             "title": "Système de Perception Drone IA Temps Réel",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "Plateforme de perception drone autonome bout-en-bout. YOLOv11 + TensorRT FP16 personnalisé sur NVIDIA Jetson Orin streame les détections en direct vers un tableau de bord opérateur React/TypeScript. Pipeline ROS2 modulaire avec tracking multi-objets centroïde et visualisation de télémétrie GPS/IMU.",
             "technologies": ["Python", "ROS2", "YOLOv11", "TensorRT", "GStreamer", "Flask", "React", "TypeScript", "Jetson Orin"],
             "links": [],
-            "image": "",
-            "video": "",
             "icon": "🚁"
         },
         {
             "title": "Système de Tracking GPS Temps Réel",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "Plateforme GPS full-stack : app Android (React Native/TypeScript) streamant des positions via WebSocket avec tampon hors-ligne et re-synchronisation automatique. Tableau de bord web avec trajectoires temps réel sur carte Leaflet, gestion de sessions, authentification JWT et suivi multi-appareils. Déployé sur Linux via Docker.",
             "technologies": ["React Native", "TypeScript", "Node.js", "Express", "Socket.IO", "SQLite", "Leaflet", "JWT", "Docker"],
             "links": [],
-            "image": "",
-            "video": "",
             "icon": "📍"
         },
         {
             "title": "Tic-Tac-Two – Jeu Multijoueur en Ligne",
             "href": "https://tic-tac-two-phi.vercel.app/",
-            "dates": "",
-            "active": true,
             "description": "Jeu de Tic-Tac-Toe multijoueur full-stack avec une règle en plus : deux coups par tour. Communication WebSocket temps réel, déployé sur Vercel et Render.",
             "technologies": ["Next.js", "TypeScript", "Node.js", "WebSockets"],
             "links": [
                 { "type": "Démo Live", "href": "https://tic-tac-two-phi.vercel.app/", "icon": "globe" },
                 { "type": "GitHub", "href": "https://github.com/faycal-ghozzi/tic-tac-two", "icon": "github" }
             ],
-            "image": "",
-            "video": "/tictactwo.mov",
             "icon": "🎮"
         },
         {
             "title": "Middleware-BTL – Intégration Bancaire Core",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "Middleware de production reliant TuniChèques à Temenos T24 R11 via SOAP (messages OFS) avec une couche API REST pour les consommateurs internes. Traite 1 000+ transactions quotidiennes avec journalisation complète et tableau de bord de monitoring temps réel.",
             "technologies": ["PHP 8.3", "JBase", "MySQL", "API REST", "SOAP", "Temenos T24"],
             "links": [],
-            "image": "/tunicheques.png",
-            "video": "",
             "icon": "🏦",
             "logoUrl": "/btl.png",
             "badge": "En Production"
@@ -224,13 +161,9 @@
         {
             "title": "BTL-Synthèse – Analyse des États Financiers",
             "href": "",
-            "dates": "",
-            "active": false,
             "description": "Application modulaire pour numériser et valider les bilans et comptes de résultat des clients. Logique de lignes financières configurable, validation automatique actif/passif/résultat fiscal, pour accélérer l'évaluation du risque crédit.",
             "technologies": ["Laravel 9", "MySQL", "TailwindCSS"],
             "links": [],
-            "image": "/btl-synthese.png",
-            "video": "",
             "icon": "📊",
             "logoUrl": "/btl.png",
             "badge": "En Production"
@@ -241,37 +174,29 @@
             "title": "Spécialisation en Test et Automatisation Logicielle",
             "description": "Spécialisation en cours axée sur les bonnes pratiques du test logiciel, les frameworks d'automatisation et le développement orienté test.",
             "date": "En cours",
-            "location": "À distance",
-            "image": "/coursera.png",
-            "links": []
+            "image": "/coursera.png"
         },
         {
             "title": "Cours d'Intelligence Artificielle",
             "description": "Programme complet du Samsung Innovation Campus couvrant les bases de l'IA, du machine learning et du traitement de données avec des jeux de données réels.",
             "date": "Février 2025",
-            "location": "À distance",
-            "image": "/samsung.webp",
-            "links": []
+            "image": "/samsung.webp"
         },
         {
             "title": "Fondamentaux du Deep Learning",
             "description": "Introduction essentielle par NVIDIA aux réseaux de neurones, au deep learning et au calcul accéléré par GPU avec TensorFlow et PyTorch.",
             "date": "Octobre 2021",
-            "location": "À distance",
-            "image": "/nvidia.png",
-            "links": []
+            "image": "/nvidia.png"
         },
         {
             "title": "Python Intermédiaire",
             "description": "Formation pratique DataCamp pour renforcer les compétences Python : compréhensions de listes, fonctions lambda, gestion des erreurs et bibliothèques externes.",
             "date": "Janvier 2022",
-            "location": "À distance",
-            "image": "/datacamp.svg",
-            "links": []
+            "image": "/datacamp.svg"
         }
     ],
     "sections": {
-        "hello": "Salut, je suis Fayçal",
+        "hello": "Salut, je suis",
         "about": "À propos",
         "work": "Expérience professionnelle",
         "education": "Éducation",
@@ -284,12 +209,9 @@
         "certificationsDescription": "Certifications et formations qui témoignent de mon engagement pour la croissance.",
         "contact": "Contact",
         "contactTitle": "Construisons quelque chose de <em>grand</em> ensemble",
-        "contactDescriptionStart": "Une question ou envie de collaborer ?",
-        "contactDescriptionLink": "Envoie-moi un email",
-        "contactDescriptionEnd": "et je te répondrai en moins de 24h.",
         "present": "Présent",
         "heroEyebrow": "Ouvert aux opportunités · Strasbourg, France",
-        "heroH1a": "Je suis",
+        "heroH1a": "Je suis Fayçal,",
         "heroH1b": "ingénieur",
         "heroH1c": "logiciel",
         "heroCta1": "👀 Voir mes projets",
@@ -328,7 +250,6 @@
         "contactMessagePh": "Parlez-moi de votre projet...",
         "contactSend": "Envoyer ✉️",
         "contactSent": "Envoyé ! 🎉",
-        "footerMade": "Fait avec ❤️ à Strasbourg",
         "footerBuilt": "Réalisé par Fayçal Ghozzi",
         "hireMe": "Me recruter ✨"
     }
