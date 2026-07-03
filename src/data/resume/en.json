@@ -18,7 +18,7 @@
             "icon": "⚛️",
             "label": "Frontend & Mobile",
             "colorClass": "sk-teal",
-            "skills": ["React.js", "Next.js", "React Native", "Expo", "Vue.js", "TypeScript", "JavaScript"]
+            "skills": ["React.js", "Next.js", "React Native", "Expo", "Vue.js", "TypeScript", "JavaScript", "Tailwind CSS"]
         },
         {
             "icon": "🗄️",
