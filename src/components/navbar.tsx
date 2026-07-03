@@ -6,6 +6,28 @@ import { useLang } from "@/contexts/lang-context";
 import Link from "next/link";
 import Image from "next/image";
 
+function FlagGB() {
+  return (
+    <svg width="16" height="12" viewBox="0 0 60 40" aria-hidden="true" style={{ borderRadius: "2px", flexShrink: 0 }}>
+      <rect width="60" height="40" fill="#00247d" />
+      <path d="M0,0 60,40 M60,0 0,40" stroke="#fff" strokeWidth="6" />
+      <path d="M0,0 60,40 M60,0 0,40" stroke="#cf142b" strokeWidth="2" />
+      <path d="M30,0 30,40 M0,20 60,20" stroke="#fff" strokeWidth="10" />
+      <path d="M30,0 30,40 M0,20 60,20" stroke="#cf142b" strokeWidth="6" />
+    </svg>
+  );
+}
+
+function FlagFR() {
+  return (
+    <svg width="16" height="12" viewBox="0 0 60 40" aria-hidden="true" style={{ borderRadius: "2px", flexShrink: 0 }}>
+      <rect width="20" height="40" fill="#0055A4" />
+      <rect x="20" width="20" height="40" fill="#FFFFFF" />
+      <rect x="40" width="20" height="40" fill="#EF4135" />
+    </svg>
+  );
+}
+
 export default function Navbar() {
   const { DATA, lang, setLang } = useLang();
   const { theme, setTheme } = useTheme();
@@ -154,6 +176,9 @@ export default function Navbar() {
                 key={l}
                 onClick={() => setLang(l)}
                 style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
                   padding: "5px 12px",
                   borderRadius: "100px",
                   border: "none",
@@ -167,7 +192,8 @@ export default function Navbar() {
                   boxShadow: lang === l ? "0 2px 8px rgba(255,107,53,0.3)" : "none",
                 }}
               >
-                {l === "en" ? "🇬🇧 EN" : "🇫🇷 FR"}
+                {l === "en" ? <FlagGB /> : <FlagFR />}
+                {l === "en" ? "EN" : "FR"}
               </button>
             ))}
           </div>
