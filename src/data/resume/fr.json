@@ -113,7 +113,7 @@
     ],
     "projects": [
         {
-            "title": "LazyKitty – Framework Web Python",
+            "title": "LazyKitty, Framework Web Python",
             "href": "",
             "description": "Framework web Python open-source rendant des interfaces full-stack via WebSockets persistants, sans JavaScript ni templates HTML. Routage basé sur les fichiers à la Next.js, API de composants déclaratifs (Column, Row, Card, Table, Form...), état de session côté serveur, et moteur de migrations SQLite intégré.",
             "technologies": ["Python", "Starlette", "WebSockets", "uvicorn", "morphdom"],
@@ -141,7 +141,7 @@
             "icon": "📍"
         },
         {
-            "title": "Tic-Tac-Two – Jeu Multijoueur en Ligne",
+            "title": "Tic-Tac-Two, Jeu Multijoueur en Ligne",
             "href": "https://tic-tac-two-phi.vercel.app/",
             "description": "Jeu de Tic-Tac-Toe multijoueur full-stack avec une règle en plus : deux coups par tour. Communication WebSocket temps réel, déployé sur Vercel et Render.",
             "technologies": ["Next.js", "TypeScript", "Node.js", "WebSockets"],
@@ -152,7 +152,7 @@
             "icon": "🎮"
         },
         {
-            "title": "Middleware-BTL – Intégration Bancaire Core",
+            "title": "Middleware-BTL, Intégration Bancaire Core",
             "href": "",
             "description": "Middleware de production en Python/FastAPI reliant la plateforme nationale PECC à Temenos T24 R11 via SOAP (messages OFS), avec une couche API REST pour les consommateurs internes, gestion des OTP et journalisation à deux niveaux.",
             "technologies": ["Python", "FastAPI", "JBase", "MySQL", "API REST", "SOAP", "Temenos T24"],
@@ -162,7 +162,7 @@
             "badge": "En Production"
         },
         {
-            "title": "BTL-Synthèse – Analyse des États Financiers",
+            "title": "BTL-Synthèse, Analyse des États Financiers",
             "href": "",
             "description": "Application modulaire en Python/FastAPI pour numériser et valider les bilans et comptes de résultat des clients. Logique de lignes financières configurable, validation automatique actif/passif/résultat fiscal, pour accélérer l'évaluation du risque crédit.",
             "technologies": ["Python", "FastAPI", "MySQL", "React.js"],

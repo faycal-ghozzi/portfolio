@@ -113,7 +113,7 @@
     ],
     "projects": [
         {
-            "title": "LazyKitty – Python Web Framework",
+            "title": "LazyKitty, Python Web Framework",
             "href": "",
             "description": "Open-source Python reactive web framework that renders full-stack UIs over persistent WebSockets with no JavaScript or HTML templates required. File-based routing à la Next.js, declarative component API (Column, Row, Card, Table, Form...), server-side session state, and a built-in SQLite migration engine.",
             "technologies": ["Python", "Starlette", "WebSockets", "uvicorn", "morphdom"],
@@ -141,7 +141,7 @@
             "icon": "📍"
         },
         {
-            "title": "Tic-Tac-Two – Multiplayer Online Game",
+            "title": "Tic-Tac-Two, Multiplayer Online Game",
             "href": "https://tic-tac-two-phi.vercel.app/",
             "description": "Full-stack multiplayer Tic-Tac-Toe with a twist: two moves per turn. Real-time WebSocket communication, deployed on Vercel and Render.",
             "technologies": ["Next.js", "TypeScript", "Node.js", "WebSockets"],
@@ -152,7 +152,7 @@
             "icon": "🎮"
         },
         {
-            "title": "Middleware-BTL – Core Banking Integration",
+            "title": "Middleware-BTL, Core Banking Integration",
             "href": "",
             "description": "Production middleware in Python/FastAPI connecting the national PECC check platform to Temenos T24 R11 via SOAP (OFS messages), with a REST API layer for internal consumers, OTP management, and two-level logging.",
             "technologies": ["Python", "FastAPI", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
@@ -162,7 +162,7 @@
             "badge": "Production"
         },
         {
-            "title": "BTL-Synthèse – Financial Statement Analyzer",
+            "title": "BTL-Synthèse, Financial Statement Analyzer",
             "href": "",
             "description": "Modular Python/FastAPI app to digitise and validate client balance sheets and income statements. Configurable financial row logic, automatic validation of assets/liabilities/fiscal results, accelerating credit risk assessment.",
             "technologies": ["Python", "FastAPI", "MySQL", "React.js"],
