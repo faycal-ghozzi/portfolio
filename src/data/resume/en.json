@@ -39,36 +39,36 @@
         {
             "company": "CESI Strasbourg | Mon Trajet Vert",
             "href": "https://www.montrajetvert.fr",
-            "title": "R&D Software Engineer",
+            "title": "Research Engineer",
             "logoUrl": "/cesi.png",
             "start": "July 2025",
             "end": "Present",
-            "description": "Lead engineer on Mon Trajet Vert, a French multi-modal mobility platform aggregating GTFS/GTFS-RT feeds from 7 cities. FastAPI backend on GCP Cloud Run with RAPTOR algorithm, optimised GTFS pipeline (49h → under 10 min), and routing latency cut to under 6 seconds.",
+            "description": "Lead engineer on Mon Trajet Vert, a multimodal journey planner covering 7 French cities. Cut GTFS ingestion time from 49 hours to under 10 minutes (20M+ rows, multi-provider) and RAPTOR query latency from 1 minute to under 6 seconds on large cities.",
             "bullets": [
-                "Lead engineer on Mon Trajet Vert, aggregating GTFS/GTFS-RT feeds from 7 cities (Strasbourg, Paris, Nantes, Lyon, Toulouse, Bordeaux, La Rochelle)",
-                "Designed a FastAPI backend on GCP Cloud Run implementing the RAPTOR algorithm for multimodal journey planning (tram, metro, bus, train, bike-share via GBFS, personal bike with parking search, wheelchair-accessible routes), complemented by an OSM pedestrian graph for walking transfers",
-                "Optimized GTFS ingestion pipeline (20M+ rows, multiple simultaneous providers): reduced initialization time for large cities from 49 hours to under 10 minutes",
-                "Reduced RAPTOR routing latency from 1 minute to under 6 seconds on large cities (a few milliseconds on medium/small cities)",
-                "Built a Dijkstra-based benchmarking tool to validate RAPTOR performance under identical test conditions",
-                "Integrated Firestore via a GraphQL API; handled GTFS edge cases (overnight trips, public holiday calendars, line color normalization)",
-                "Coordinated weekly sprints with Galadrim (frontend partner) on web/mobile deliverables; mentored interns and PhD students"
+                "Lead engineer on Mon Trajet Vert, a multimodal journey planner covering 7 French cities (Strasbourg, Paris, Lyon, Nantes, Toulouse, Bordeaux, La Rochelle)",
+                "Designed a FastAPI backend on GCP Cloud Run implementing the RAPTOR algorithm for multimodal routing: tram, metro, bus, rail, GBFS bike-share, personal cycling with bike-parking lookup, and PMR accessibility",
+                "Built an OSM pedestrian graph for walking transfers and integrated Firestore via a GraphQL API",
+                "Optimized GTFS ingestion (20M+ rows, multiple simultaneous providers): cut initialization time from 49 hours to under 10 minutes, and RAPTOR query latency from 1 minute to under 6 seconds on large cities",
+                "Built a Dijkstra-based benchmark tool to validate RAPTOR performance under controlled conditions",
+                "Handled GTFS edge cases: overnight trips, public holiday calendars, line colour normalisation",
+                "Coordinated weekly sprints with our partner on web/mobile deliverables; mentored interns and doctoral researchers"
             ],
             "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
         },
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
             "href": "",
-            "title": "Software Engineer",
+            "title": "Lead Software Engineer",
             "logoUrl": "/btl.png",
             "start": "October 2024",
             "end": "June 2025",
-            "description": "Designed and built the BTL payment middleware end-to-end in Python/FastAPI: REST API consumed by the national PECC check platform, SOAP/OFS messages to Temenos T24 R11. Refactored two critical legacy banking applications (SWIFT, approval workflows) and developed BTL-Synthèse.",
+            "description": "Lead Software Engineer on two critical projects at BTL, alongside the overhaul of two existing banking applications. Designed the TuniChèque payment middleware end-to-end in Python/FastAPI, delivered in-house instead of outsourcing it to an external provider.",
             "bullets": [
-                "Designed and built the BTL payment middleware end-to-end in Python/FastAPI: REST API consumed by the national PECC check platform, SOAP/OFS messages to Temenos T24 R11, OTP management, and two-level logging (global daily tracking + per-operation traceability)",
-                "Took over and refactored two critical legacy banking applications (SWIFT operations covering MT103, MT202, MT202COV, MT950; approval workflow digitalization for clearing, check reservation, and credit): introduced shared templates, reusable services/helpers, exception handling, and clear error messages, significantly reducing production incidents",
-                "Developed BTL-Synthèse: a modular application to digitize and validate client balance sheets and income statements, with automatic asset/liability checks, financial ratio computation, and full audit traceability",
-                "Acted as technical liaison between BTL management and Pixel Trade (external vendor) for BTL M Banking (native Android/iOS) and the web platform: bug qualification and resolution tracking",
-                "Delivered logs and reports to risk and audit teams: SWIFT operation tracking, role change traceability, approval/rejection logs"
+                "Designed end-to-end the TuniChèque payment middleware in Python/FastAPI: REST API on the national centralised cheque platform (PECC) side, SOAP/OFS messages to Temenos T24 R11 on the core banking side, OTP handling, and two-level logging (global daily tracking + per-operation traceability); delivered in-house, avoiding the cost of an external provider",
+                "Overhauled two critical banking applications (SWIFT operations: MT103, MT202, MT202COV, MT950; approval workflows for clearing, cheque reservation and credit): replaced raw SQL and inline SOAP calls in views with reusable services, shared templates and exception handling, significantly reducing production incidents",
+                "Built BTL-Synthèse: a modular application to digitize and validate client balance sheets and income statements, with automatic asset/liability checks, financial ratio computation, and full input traceability to limit fraud risk",
+                "Acted as technical liaison between BTL management and Pixel Trade (external partner) for BTL M Banking (native Android/Kotlin, native iOS, Symfony) and the web platform: bug qualification and resolution tracking",
+                "Delivered logs and reports to risk and audit teams covering SWIFT operations, role changes, workflow approvals/rejections, and accounting entries"
             ],
             "stack": "Python · FastAPI · MySQL · Temenos T24 · SOAP · REST API · JBase · React.js"
         },
@@ -79,26 +79,28 @@
             "logoUrl": "/hortensia_agency.png",
             "start": "May 2024",
             "end": "October 2024",
-            "description": "Optimised backend and feature stability on Project Curve, a predictive analytics platform using sigmoid-based financial modelling. Integrated Stripe with webhook-based billing.",
+            "description": "Contributed to Project Curve, a project management platform using sigmoid equations for more accurate forecasts of end dates and costs. Focused on debugging and integrating payment and subscription solutions with Stripe.",
             "bullets": [
-                "Optimised backend and contributed to feature stability on Project Curve, a sigmoid-based financial modelling platform",
-                "Integrated Stripe payment gateway: free/paid subscription tiers with webhook-based billing lifecycle management"
+                "Worked on Project Curve, forecasting project end dates and costs via sigmoid-based modelling; debugged core platform issues",
+                "Integrated Stripe payment and subscription solutions: free/paid tiers with webhook-based billing lifecycle management"
             ],
             "stack": "React.js · Stripe · MongoDB · Flask"
         },
         {
             "company": "7Systems GmbH",
             "href": "https://bmacloud.de",
-            "title": "Software Engineer",
+            "title": "Full Stack Developer",
             "logoUrl": "/7s.png",
             "start": "February 2023",
             "end": "April 2024",
-            "description": "Expanded and stabilised the bmacloud.de SaaS platform. Migrated legacy frontend to React.js. Improved team productivity by 30% through test automation and CI/CD.",
+            "description": "Contributed to the development and stabilisation of the bmacloud.de SaaS platform in Gummersbach, Germany. Migrated the legacy frontend to React.js and worked closely with clients to translate business needs into features.",
             "bullets": [
-                "Expanded and stabilised the bmacloud.de SaaS platform",
-                "Migrated legacy frontend to React.js; improved team productivity by 30% through test automation and CI/CD improvements"
+                "Migrated legacy frontend to React.js",
+                "Worked closely with clients to translate business needs into web and mobile features",
+                "Introduced automated testing and improved the CI/CD pipeline, increasing team productivity by 30%",
+                "Led debugging campaigns that reduced regressions and accelerated feature delivery"
             ],
-            "stack": "React.js · PHP 7.4"
+            "stack": "React.js · PHP 7.4 · MySQL"
         }
     ],
     "education": [
@@ -114,10 +116,11 @@
     "projects": [
         {
             "title": "LazyKitty, Python Web Framework",
-            "href": "",
+            "href": "https://www.lazykitty.dev/",
             "description": "Open-source Python reactive web framework that renders full-stack UIs over persistent WebSockets with no JavaScript or HTML templates required. File-based routing à la Next.js, declarative component API (Column, Row, Card, Table, Form...), server-side session state, and a built-in SQLite migration engine.",
             "technologies": ["Python", "Starlette", "WebSockets", "uvicorn", "morphdom"],
             "links": [
+                { "type": "Website", "href": "https://www.lazykitty.dev/", "icon": "globe" },
                 { "type": "GitHub", "href": "https://github.com/faycal-ghozzi", "icon": "github" }
             ],
             "icon": "🐱",
@@ -223,7 +226,7 @@
         "aboutTitle": "Engineer & builder at heart",
         "aboutP1": "Hey! I'm Fayçal, a backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. I ship production systems in Python and React.js.",
         "aboutP2": "My work spans <strong>core banking middleware, real-time data pipelines, and autonomous perception systems</strong>. I care about code that's fast, reliable, and that teammates can extend without fear.",
-        "aboutP3": "Currently lead engineer on <em>Mon Trajet Vert</em> at CESI Strasbourg, processing 20M+ GTFS rows across 7 cities.",
+        "aboutP3": "Currently a research engineer on <em>Mon Trajet Vert</em> at CESI Strasbourg: 20M+ GTFS rows processed across 7 cities, ingestion cut from 49h to under 10 minutes, and routes computed in under 6 seconds.",
         "aboutP4": "Author of <em>LazyKitty</em>, an open-source Python web framework.",
         "aboutChip1": "OSS Framework Author",
         "aboutChip2": "Mobility R&D",
