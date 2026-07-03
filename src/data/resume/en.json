@@ -18,7 +18,7 @@
             "icon": "⚛️",
             "label": "Frontend & Mobile",
             "colorClass": "sk-teal",
-            "skills": ["React.js", "Next.js", "React Native", "Expo", "Vue.js", "TypeScript", "JavaScript", "Tailwind CSS"]
+            "skills": ["React", "Next.js", "React Native", "Expo", "Vue.js", "TypeScript", "JavaScript", "Tailwind CSS"]
         },
         {
             "icon": "🗄️",
@@ -53,7 +53,7 @@
                 "Handled GTFS edge cases: overnight trips, public holiday calendars, line colour normalisation",
                 "Coordinated weekly sprints with our partner on web/mobile deliverables; mentored interns and doctoral researchers"
             ],
-            "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
+            "stack": "Python · FastAPI · React · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
         },
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
@@ -70,7 +70,7 @@
                 "Acted as technical liaison between BTL management and Pixel Trade (external partner) for BTL M Banking (native Android/Kotlin, native iOS, Symfony) and the web platform: bug qualification and resolution tracking",
                 "Delivered logs and reports to risk and audit teams covering SWIFT operations, role changes, workflow approvals/rejections, and accounting entries"
             ],
-            "stack": "Python · FastAPI · MySQL · Temenos T24 · SOAP · REST API · JBase · React.js"
+            "stack": "Python · FastAPI · React · MySQL · Temenos T24 · SOAP · API REST · JBase"
         },
         {
             "company": "Hortensia Agency",
@@ -84,7 +84,7 @@
                 "Worked on Project Curve, forecasting project end dates and costs via sigmoid-based modelling; debugged core platform issues",
                 "Integrated Stripe payment and subscription solutions: free/paid tiers with webhook-based billing lifecycle management"
             ],
-            "stack": "React.js · Stripe · MongoDB · Flask"
+            "stack": "Python · Flask · React · MongoDB · Stripe"
         },
         {
             "company": "7Systems GmbH",
@@ -93,14 +93,14 @@
             "logoUrl": "/7s.png",
             "start": "February 2023",
             "end": "April 2024",
-            "description": "Contributed to the development and stabilisation of the bmacloud.de SaaS platform in Gummersbach, Germany. Migrated the legacy frontend to React.js and worked closely with clients to translate business needs into features.",
+            "description": "Contributed to the development and stabilisation of the bmacloud.de SaaS platform in Gummersbach, Germany. Migrated the legacy frontend to React and worked closely with clients to translate business needs into features.",
             "bullets": [
-                "Migrated legacy frontend to React.js",
+                "Migrated legacy frontend to React",
                 "Worked closely with clients to translate business needs into web and mobile features",
                 "Introduced automated testing and improved the CI/CD pipeline, increasing team productivity by 30%",
                 "Led debugging campaigns that reduced regressions and accelerated feature delivery"
             ],
-            "stack": "React.js · PHP 7.4 · MySQL"
+            "stack": "React · PHP 7.4 · MySQL"
         }
     ],
     "education": [
@@ -158,7 +158,7 @@
             "title": "Middleware-BTL, Core Banking Integration",
             "href": "",
             "description": "Production middleware in Python/FastAPI connecting the national PECC check platform to Temenos T24 R11 via SOAP (OFS messages), with a REST API layer for internal consumers, OTP management, and two-level logging.",
-            "technologies": ["Python", "FastAPI", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
+            "technologies": ["Python", "FastAPI", "React", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
             "links": [],
             "icon": "🏦",
             "logoUrl": "/btl.png",
@@ -168,7 +168,7 @@
             "title": "BTL-Synthèse, Financial Statement Analyzer",
             "href": "",
             "description": "Modular Python/FastAPI app to digitise and validate client balance sheets and income statements. Configurable financial row logic, automatic validation of assets/liabilities/fiscal results, accelerating credit risk assessment.",
-            "technologies": ["Python", "FastAPI", "MySQL", "React.js"],
+            "technologies": ["Python", "FastAPI", "React", "MySQL"],
             "links": [],
             "icon": "📊",
             "logoUrl": "/btl.png",
@@ -224,7 +224,7 @@
         "heroCta2": "💬 Let's Chat",
         "aboutAvailable": "Open to work",
         "aboutTitle": "Engineer & builder at heart",
-        "aboutP1": "Hey! I'm Fayçal, a backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. I ship production systems in Python and React.js.",
+        "aboutP1": "Hey! I'm Fayçal, a backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. I ship production systems in Python and React.",
         "aboutP2": "My work spans <strong>core banking middleware, real-time data pipelines, and autonomous perception systems</strong>. I care about code that's fast, reliable, and that teammates can extend without fear.",
         "aboutP3": "Currently a research engineer on <em>Mon Trajet Vert</em> at CESI Strasbourg: 20M+ GTFS rows processed across 7 cities, ingestion cut from 49h to under 10 minutes, and routes computed in under 6 seconds.",
         "aboutP4": "Author of <em>LazyKitty</em>, an open-source Python web framework.",

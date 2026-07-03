@@ -22,7 +22,7 @@ const fontDisplay = FontDisplay({
 const SITE_URL = "https://fayghz.com";
 const SITE_TITLE = "Fayçal Ghozzi | Backend Software Engineer - Python, FastAPI, React";
 const SITE_DESCRIPTION =
-  "Fayçal Ghozzi, backend engineer building fintech APIs and payment middleware in Python, FastAPI and React.js. Open to roles in Strasbourg, Toulouse, Paris or remote.";
+  "Fayçal Ghozzi, backend engineer building fintech APIs and payment middleware in Python, FastAPI and React. Open to roles in Strasbourg, Toulouse, Paris or remote.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "backend software engineer",
     "Python developer",
     "FastAPI developer",
-    "React.js developer",
+    "React developer",
     "fintech API integration",
     "payment middleware engineer",
     "software engineer Strasbourg",
@@ -118,7 +118,7 @@ const personJsonLd = {
   knowsAbout: [
     "Python",
     "FastAPI",
-    "React.js",
+    "React",
     "Backend Development",
     "API Integration",
     "Payment Middleware",

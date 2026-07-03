@@ -18,7 +18,7 @@
             "icon": "⚛️",
             "label": "Frontend & Mobile",
             "colorClass": "sk-teal",
-            "skills": ["React.js", "Next.js", "React Native", "Expo", "Vue.js", "TypeScript", "JavaScript", "Tailwind CSS"]
+            "skills": ["React", "Next.js", "React Native", "Expo", "Vue.js", "TypeScript", "JavaScript", "Tailwind CSS"]
         },
         {
             "icon": "🗄️",
@@ -53,7 +53,7 @@
                 "Gestion des cas particuliers GTFS : trajets nocturnes, jours fériés, normalisation des couleurs de lignes",
                 "Coordination de sprints hebdomadaires avec notre partenaire sur les livrables web/mobile ; encadrement de stagiaires et de doctorants"
             ],
-            "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
+            "stack": "Python · FastAPI · React · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
         },
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
@@ -70,7 +70,7 @@
                 "Interlocuteur technique entre la direction BTL et Pixel Trade (prestataire externe) pour BTL M Banking (Android Kotlin, iOS natif, Symfony) et le site web : qualification des anomalies et suivi de leur résolution",
                 "Fourniture de logs et rapports aux équipes risque et audit : opérations SWIFT, changements de rôle, validations/refus dans les circuits d'approbation, saisies comptables"
             ],
-            "stack": "Python · FastAPI · MySQL · Temenos T24 · SOAP · API REST · JBase · React.js"
+            "stack": "Python · FastAPI · React · MySQL · Temenos T24 · SOAP · API REST · JBase"
         },
         {
             "company": "Hortensia Agency",
@@ -84,7 +84,7 @@
                 "Travail sur Project Curve, prévision des dates de fin et des coûts de projet via une modélisation sigmoïde ; débogage du cœur de la plateforme",
                 "Intégration des solutions de paiement et d'abonnement Stripe : offres gratuites/payantes avec gestion du cycle de facturation par webhooks"
             ],
-            "stack": "React.js · Stripe · MongoDB · Flask"
+            "stack": "Python · Flask · React · MongoDB · Stripe"
         },
         {
             "company": "7Systems GmbH",
@@ -93,14 +93,14 @@
             "logoUrl": "/7s.png",
             "start": "Février 2023",
             "end": "Avril 2024",
-            "description": "Participation au développement et à la stabilisation de la plateforme SaaS bmacloud.de à Gummersbach, Allemagne. Migration du frontend legacy vers React.js et collaboration étroite avec les clients pour traduire leurs besoins en fonctionnalités.",
+            "description": "Participation au développement et à la stabilisation de la plateforme SaaS bmacloud.de à Gummersbach, Allemagne. Migration du frontend legacy vers React et collaboration étroite avec les clients pour traduire leurs besoins en fonctionnalités.",
             "bullets": [
-                "Migration du frontend legacy vers React.js",
+                "Migration du frontend legacy vers React",
                 "Collaboration étroite avec les clients pour traduire leurs besoins en fonctionnalités web et mobile",
                 "Mise en place de tests automatisés et amélioration du pipeline CI/CD, augmentant la productivité de l'équipe de 30 %",
                 "Campagnes de débogage approfondies réduisant les régressions et accélérant la livraison de nouvelles fonctionnalités"
             ],
-            "stack": "React.js · PHP 7.4 · MySQL"
+            "stack": "React · PHP 7.4 · MySQL"
         }
     ],
     "education": [
@@ -158,7 +158,7 @@
             "title": "Middleware-BTL, Intégration Bancaire Core",
             "href": "",
             "description": "Middleware de production en Python/FastAPI reliant la plateforme nationale PECC à Temenos T24 R11 via SOAP (messages OFS), avec une couche API REST pour les consommateurs internes, gestion des OTP et journalisation à deux niveaux.",
-            "technologies": ["Python", "FastAPI", "JBase", "MySQL", "API REST", "SOAP", "Temenos T24"],
+            "technologies": ["Python", "FastAPI", "React", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
             "links": [],
             "icon": "🏦",
             "logoUrl": "/btl.png",
@@ -168,7 +168,7 @@
             "title": "BTL-Synthèse, Analyse des États Financiers",
             "href": "",
             "description": "Application modulaire en Python/FastAPI pour numériser et valider les bilans et comptes de résultat des clients. Logique de lignes financières configurable, validation automatique actif/passif/résultat fiscal, pour accélérer l'évaluation du risque crédit.",
-            "technologies": ["Python", "FastAPI", "MySQL", "React.js"],
+            "technologies": ["Python", "FastAPI", "React" , "MySQL"],
             "links": [],
             "icon": "📊",
             "logoUrl": "/btl.png",
@@ -224,7 +224,7 @@
         "heroCta2": "💬 Discutons",
         "aboutAvailable": "Disponible",
         "aboutTitle": "Ingénieur & bâtisseur dans l'âme",
-        "aboutP1": "Salut ! Je suis Fayçal, ingénieur backend avec <strong>3+ ans</strong> d'expérience dans les intégrations financières, middleware de paiement et APIs scalables. Je livre des systèmes production en Python et React.js.",
+        "aboutP1": "Salut ! Je suis Fayçal, ingénieur backend avec <strong>3+ ans</strong> d'expérience dans les intégrations financières, middleware de paiement et APIs scalables. Je livre des systèmes production en Python et React.",
         "aboutP2": "Mon travail couvre <strong>les middlewares bancaires critiques, les pipelines de données temps réel et les systèmes de perception autonome</strong>. J'aime du code rapide, fiable et que les équipes peuvent faire évoluer sans crainte.",
         "aboutP3": "Actuellement ingénieur de recherche sur <em>Mon Trajet Vert</em> au CESI Strasbourg : 20M+ lignes GTFS traitées depuis 7 villes, ingestion réduite de 49h à moins de 10 min, et itinéraires calculés en moins de 6 secondes.<br>Aussi auteur de <em>LazyKitty</em>, un framework web Python open-source.",
         "aboutP4": "Auteur de <em>LazyKitty</em>, un framework web Python open-source.",
