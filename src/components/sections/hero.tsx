@@ -250,7 +250,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right — floating pills */}
+        {/* Right - floating pills */}
         <div
           className="pg-fade-up hidden lg:flex"
           style={{

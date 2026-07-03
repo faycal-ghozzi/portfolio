@@ -12,7 +12,7 @@
             "icon": "🧠",
             "label": "Backend",
             "colorClass": "sk-orange",
-            "skills": ["Python", "FastAPI", "Flask", "PHP", "Laravel", "Node.js", "Java", "GraphQL", "SOAP/REST"]
+            "skills": ["Python", "FastAPI", "Flask", "PHP", "C#", ".NET", "Node.js", "Java", "GraphQL", "SOAP/REST"]
         },
         {
             "icon": "⚛️",
@@ -43,15 +43,17 @@
             "logoUrl": "/cesi.png",
             "start": "July 2025",
             "end": "Present",
-            "description": "Lead engineer on Mon Trajet Vert, a French multi-modal mobility platform aggregating GTFS/GTFS-RT feeds from 7 cities. FastAPI backend on GCP Cloud Run with RAPTOR algorithm for journey planning.",
+            "description": "Lead engineer on Mon Trajet Vert, a French multi-modal mobility platform aggregating GTFS/GTFS-RT feeds from 7 cities. FastAPI backend on GCP Cloud Run with RAPTOR algorithm, optimised GTFS pipeline (49h → under 10 min), and routing latency cut to under 6 seconds.",
             "bullets": [
                 "Lead engineer on Mon Trajet Vert, aggregating GTFS/GTFS-RT feeds from 7 cities (Strasbourg, Paris, Nantes, Lyon, Toulouse, Bordeaux, La Rochelle)",
-                "Designed FastAPI backend on GCP Cloud Run with RAPTOR algorithm for multi-modal journey planning (tram, metro, bus, train) + OSM pedestrian graph for walking transfers",
-                "Built memory-efficient GTFS ingestion pipeline processing 20M+ rows across simultaneous providers, with fault tolerance and daily automated sync",
-                "Integrated Firestore via GraphQL API; handled GTFS edge cases: overnight trips, public holiday calendars, route colour normalisation",
-                "Coordinated architecture decisions with Emage-Me; mentored interns and PhD students"
+                "Designed a FastAPI backend on GCP Cloud Run implementing the RAPTOR algorithm for multimodal journey planning (tram, metro, bus, train, bike-share via GBFS, personal bike with parking search, wheelchair-accessible routes), complemented by an OSM pedestrian graph for walking transfers",
+                "Optimized GTFS ingestion pipeline (20M+ rows, multiple simultaneous providers): reduced initialization time for large cities from 49 hours to under 10 minutes",
+                "Reduced RAPTOR routing latency from 1 minute to under 6 seconds on large cities (a few milliseconds on medium/small cities)",
+                "Built a Dijkstra-based benchmarking tool to validate RAPTOR performance under identical test conditions",
+                "Integrated Firestore via a GraphQL API; handled GTFS edge cases (overnight trips, public holiday calendars, line color normalization)",
+                "Coordinated weekly sprints with Galadrim (frontend partner) on web/mobile deliverables; mentored interns and PhD students"
             ],
-            "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GTFS/GTFS-RT"
+            "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
         },
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
@@ -60,14 +62,15 @@
             "logoUrl": "/btl.png",
             "start": "October 2024",
             "end": "June 2025",
-            "description": "Architected the BTL payment middleware connecting TuniCheque to Temenos T24 R11 via SOAP. System handles 1,000+ daily cheque reservation transactions.",
+            "description": "Designed and built the BTL payment middleware end-to-end in Python/FastAPI: REST API consumed by the national PECC check platform, SOAP/OFS messages to Temenos T24 R11. Refactored two critical legacy banking applications (SWIFT, approval workflows) and developed BTL-Synthèse.",
             "bullets": [
-                "Architected BTL payment middleware: TuniCheque → Temenos T24 R11 via SOAP (OFS messages), handles 1,000+ daily cheque reservation transactions",
-                "Built real-time monitoring dashboard with full transaction audit logging and traceability for banking staff",
-                "Led BTL M Banking mobile app end-to-end; improved banking workflows by 20%; optimised SWIFT message handling",
-                "Delivered BTL-Synthese: modular app to digitise and validate client balance sheets and income statements for credit risk assessment"
+                "Designed and built the BTL payment middleware end-to-end in Python/FastAPI: REST API consumed by the national PECC check platform, SOAP/OFS messages to Temenos T24 R11, OTP management, and two-level logging (global daily tracking + per-operation traceability)",
+                "Took over and refactored two critical legacy banking applications (SWIFT operations covering MT103, MT202, MT202COV, MT950; approval workflow digitalization for clearing, check reservation, and credit): introduced shared templates, reusable services/helpers, exception handling, and clear error messages, significantly reducing production incidents",
+                "Developed BTL-Synthèse: a modular application to digitize and validate client balance sheets and income statements, with automatic asset/liability checks, financial ratio computation, and full audit traceability",
+                "Acted as technical liaison between BTL management and Pixel Trade (external vendor) for BTL M Banking (native Android/iOS) and the web platform: bug qualification and resolution tracking",
+                "Delivered logs and reports to risk and audit teams: SWIFT operation tracking, role change traceability, approval/rejection logs"
             ],
-            "stack": "Laravel 9 · PHP 8.3 · MySQL · Temenos T24 · TailwindCSS · JBase · REST API · SOAP"
+            "stack": "Python · FastAPI · MySQL · Temenos T24 · SOAP · REST API · JBase · React.js"
         },
         {
             "company": "Hortensia Agency",
@@ -151,8 +154,8 @@
         {
             "title": "Middleware-BTL – Core Banking Integration",
             "href": "",
-            "description": "Production middleware connecting TuniChèques to Temenos T24 R11 via SOAP (OFS messages) with a REST API layer for internal consumers. Handles 1,000+ daily transactions with full audit logging and a real-time monitoring dashboard.",
-            "technologies": ["PHP 8.3", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
+            "description": "Production middleware in Python/FastAPI connecting the national PECC check platform to Temenos T24 R11 via SOAP (OFS messages), with a REST API layer for internal consumers, OTP management, and two-level logging.",
+            "technologies": ["Python", "FastAPI", "JBase", "MySQL", "REST API", "SOAP", "Temenos T24"],
             "links": [],
             "icon": "🏦",
             "logoUrl": "/btl.png",
@@ -161,8 +164,8 @@
         {
             "title": "BTL-Synthèse – Financial Statement Analyzer",
             "href": "",
-            "description": "Modular app to digitise and validate client balance sheets and income statements. Configurable financial row logic, automatic validation of assets/liabilities/fiscal results, accelerating credit risk assessment.",
-            "technologies": ["Laravel 9", "MySQL", "TailwindCSS"],
+            "description": "Modular Python/FastAPI app to digitise and validate client balance sheets and income statements. Configurable financial row logic, automatic validation of assets/liabilities/fiscal results, accelerating credit risk assessment.",
+            "technologies": ["Python", "FastAPI", "MySQL", "React.js"],
             "links": [],
             "icon": "📊",
             "logoUrl": "/btl.png",
@@ -210,7 +213,7 @@
         "contact": "Contact",
         "contactTitle": "Let's build something <em>great</em> together",
         "present": "Present",
-        "heroEyebrow": "Open to opportunities · Strasbourg, France",
+        "heroEyebrow": "Open to opportunities · Strasbourg, Toulouse, Paris or remote",
         "heroH1a": "I'm Fayçal, a",
         "heroH1b": "software",
         "heroH1c": "engineer",
@@ -218,7 +221,7 @@
         "heroCta2": "💬 Let's Chat",
         "aboutAvailable": "Open to work",
         "aboutTitle": "Engineer & builder at heart",
-        "aboutP1": "Hey! I'm Fayçal, a backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. I ship production systems in Python, PHP and React.js.",
+        "aboutP1": "Hey! I'm Fayçal, a backend-focused engineer with <strong>3+ years</strong> building financial integrations, payment middleware, and scalable APIs. I ship production systems in Python and React.js.",
         "aboutP2": "My work spans <strong>core banking middleware, real-time data pipelines, and autonomous perception systems</strong>. I care about code that's fast, reliable, and that teammates can extend without fear.",
         "aboutP3": "Currently lead engineer on <em>Mon Trajet Vert</em> at CESI Strasbourg, processing 20M+ GTFS rows across 7 cities.",
         "aboutP4": "Author of <em>LazyKitty</em>, an open-source Python web framework.",
@@ -240,7 +243,7 @@
         "certBadge": "Certifications",
         "certTitle": "Continuous Learning",
         "certSub": "Courses and certifications that reflect my commitment to growth.",
-        "contactSub": "Open to engineering roles and interesting projects. I usually reply within 24 hours. Let's talk!",
+        "contactSub": "Open to engineering roles in Strasbourg, Toulouse, Paris or remote, as well as interesting projects. I usually reply within 24 hours. Let's talk!",
         "contactNameLabel": "Name",
         "contactNamePh": "Your name",
         "contactEmailLabel": "Email",

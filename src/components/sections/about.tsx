@@ -29,7 +29,7 @@ export function AboutSection() {
           }}
           className="about-grid"
         >
-          {/* Left — photo in morphing blob */}
+          {/* Left - photo in morphing blob */}
           <Reveal>
             <div style={{ position: "relative", width: "300px" }}>
               {/* Outer glow ring */}
@@ -44,7 +44,7 @@ export function AboutSection() {
                   animation: "morphBlob 6s ease-in-out infinite",
                 }}
               >
-                {/* Photo container — clips to the morphing shape */}
+                {/* Photo container - clips to the morphing shape */}
                 <div
                   style={{
                     width: "100%",
@@ -111,7 +111,7 @@ export function AboutSection() {
             </div>
           </Reveal>
 
-          {/* Right — text */}
+          {/* Right - text */}
           <Reveal delay="0.1s">
             {/* Badge */}
             <div

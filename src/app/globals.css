@@ -4,7 +4,7 @@
 
 /* ─── Design System: CSS Custom Properties ─── */
 :root {
-  /* shadcn base (light) — warm palette */
+  /* shadcn base (light) - warm palette */
   --background: 40 20% 97%;
   --foreground: 20 8% 10%;
   --card: 0 0% 100%;

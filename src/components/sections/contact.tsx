@@ -7,25 +7,48 @@ import { Reveal } from "@/components/reveal";
 export function ContactSection() {
   const { DATA } = useLang();
   const s = DATA.sections;
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const nameRef    = useRef<HTMLInputElement>(null);
   const emailRef   = useRef<HTMLInputElement>(null);
   const subjectRef = useRef<HTMLInputElement>(null);
   const msgRef     = useRef<HTMLTextAreaElement>(null);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     const name    = nameRef.current?.value ?? "";
     const email   = emailRef.current?.value ?? "";
     const subject = subjectRef.current?.value ?? "";
-    const msg     = msgRef.current?.value ?? "";
-    const body    = `From: ${name} (${email})\n\n${msg}`;
-    window.open(
-      `mailto:${DATA.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-    );
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
+    const message = msgRef.current?.value ?? "";
+
+    if (!name || !email || !message) {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+      return;
+    }
+
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+
+      if (!res.ok) throw new Error("Request failed");
+
+      setStatus("sent");
+      if (nameRef.current) nameRef.current.value = "";
+      if (emailRef.current) emailRef.current.value = "";
+      if (subjectRef.current) subjectRef.current.value = "";
+      if (msgRef.current) msgRef.current.value = "";
+    } catch {
+      setStatus("error");
+    } finally {
+      setTimeout(() => setStatus("idle"), 3000);
+    }
   };
+
+  const sent = status === "sent";
 
   const contactLinks = [
     { icon: "✉️", label: DATA.contact.email, href: `mailto:${DATA.contact.email}` },
@@ -184,7 +207,7 @@ export function ContactSection() {
                 </div>
               </div>
 
-              {/* Right — form */}
+              {/* Right - form */}
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px" }} className="form-row">
                   <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
@@ -223,9 +246,12 @@ export function ContactSection() {
 
                 <button
                   onClick={handleSend}
+                  disabled={status === "sending"}
                   style={{
                     background: sent
                       ? "linear-gradient(135deg, #22c55e, #16a34a)"
+                      : status === "error"
+                      ? "linear-gradient(135deg, #ef4444, #dc2626)"
                       : "linear-gradient(135deg, var(--pg-primary), #ff4500)",
                     color: "white",
                     padding: "15px 30px",
@@ -234,13 +260,16 @@ export function ContactSection() {
                     fontSize: "15px",
                     fontWeight: 800,
                     border: "none",
-                    cursor: "pointer",
+                    cursor: status === "sending" ? "default" : "pointer",
+                    opacity: status === "sending" ? 0.7 : 1,
                     alignSelf: "flex-start",
                     display: "flex",
                     alignItems: "center",
                     gap: "10px",
                     boxShadow: sent
                       ? "0 8px 24px rgba(34,197,94,0.35)"
+                      : status === "error"
+                      ? "0 8px 24px rgba(239,68,68,0.35)"
                       : "0 8px 24px rgba(255,107,53,0.35)",
                     transition: "all 0.25s var(--pg-ease)",
                   }}
@@ -248,16 +277,26 @@ export function ContactSection() {
                     (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
                     (e.currentTarget as HTMLElement).style.boxShadow = sent
                       ? "0 14px 36px rgba(34,197,94,0.5)"
+                      : status === "error"
+                      ? "0 14px 36px rgba(239,68,68,0.5)"
                       : "0 14px 36px rgba(255,107,53,0.5)";
                   }}
                   onMouseLeave={(e) => {
                     (e.currentTarget as HTMLElement).style.transform = "none";
                     (e.currentTarget as HTMLElement).style.boxShadow = sent
                       ? "0 8px 24px rgba(34,197,94,0.35)"
+                      : status === "error"
+                      ? "0 8px 24px rgba(239,68,68,0.35)"
                       : "0 8px 24px rgba(255,107,53,0.35)";
                   }}
                 >
-                  {sent ? s.contactSent : s.contactSend}
+                  {status === "sending"
+                    ? "..."
+                    : status === "error"
+                    ? "Error - try again"
+                    : sent
+                    ? s.contactSent
+                    : s.contactSend}
                 </button>
               </div>
             </div>

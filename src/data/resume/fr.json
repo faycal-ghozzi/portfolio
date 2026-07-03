@@ -12,7 +12,7 @@
             "icon": "🧠",
             "label": "Backend",
             "colorClass": "sk-orange",
-            "skills": ["Python", "FastAPI", "Flask", "PHP", "Laravel", "Node.js", "Java", "GraphQL", "SOAP/REST"]
+            "skills": ["Python", "FastAPI", "Flask", "PHP", "C#", ".NET", "Node.js", "Java", "GraphQL", "SOAP/REST"]
         },
         {
             "icon": "⚛️",
@@ -43,15 +43,17 @@
             "logoUrl": "/cesi.png",
             "start": "Juillet 2025",
             "end": "Présent",
-            "description": "Lead engineer sur Mon Trajet Vert, plateforme de mobilité multimodale française agrégeant des flux GTFS/GTFS-RT de 7 villes. Backend FastAPI sur GCP Cloud Run avec algorithme RAPTOR.",
+            "description": "Ingénieur référent sur Mon Trajet Vert, plateforme de mobilité multimodale française agrégeant des flux GTFS/GTFS-RT de 7 villes. Backend FastAPI sur GCP Cloud Run avec algorithme RAPTOR, pipeline GTFS optimisé (49h → 10 min) et latence de calcul d'itinéraire réduite à moins de 6 secondes.",
             "bullets": [
-                "Lead engineer sur Mon Trajet Vert, flux GTFS/GTFS-RT agrégés depuis 7 villes (Strasbourg, Paris, Nantes, Lyon, Toulouse, Bordeaux, La Rochelle)",
-                "Conception du backend FastAPI sur GCP Cloud Run avec algorithme RAPTOR pour la planification multimodale (tram, métro, bus, train) + graphe piéton OSM pour les transferts à pied",
-                "Pipeline d'ingestion GTFS à haute efficacité mémoire traitant 20M+ lignes de données, avec tolérance aux pannes et synchronisation automatique quotidienne",
-                "Intégration Firestore via GraphQL ; gestion des cas limites GTFS : trajets de nuit, calendriers jours fériés, normalisation des couleurs de lignes",
-                "Coordination des décisions d'architecture avec Emage-Me ; encadrement de stagiaires et doctorants"
+                "Ingénieur référent sur Mon Trajet Vert, agrégeant les flux GTFS/GTFS-RT de 7 villes (Strasbourg, Paris, Nantes, Lyon, Toulouse, Bordeaux, La Rochelle)",
+                "Conception d'un backend FastAPI sur GCP Cloud Run implémentant l'algorithme RAPTOR pour le calcul d'itinéraires multimodaux (tram, métro, bus, train, vélos en libre-service via GBFS, vélo personnel avec recherche de parkings vélo, itinéraires accessibles PMR), complété par un graphe piéton OSM",
+                "Optimisation du pipeline d'ingestion GTFS (20M+ lignes) : réduction du temps d'initialisation de 49 heures à moins de 10 minutes",
+                "Réduction de la latence RAPTOR de 1 minute à moins de 6 secondes sur les grandes villes (quelques millisecondes sur les villes moyennes/petites)",
+                "Développement d'un outil de benchmark basé sur Dijkstra pour valider les performances de RAPTOR",
+                "Intégration de Firestore via une API GraphQL ; gestion des cas particuliers GTFS (trajets nocturnes, jours fériés, normalisation des couleurs de lignes)",
+                "Coordination de sprints hebdomadaires avec Galadrim (partenaire frontend) ; encadrement de stagiaires et doctorants"
             ],
-            "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GTFS/GTFS-RT"
+            "stack": "Python · FastAPI · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
         },
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
@@ -60,14 +62,15 @@
             "logoUrl": "/btl.png",
             "start": "Octobre 2024",
             "end": "Juin 2025",
-            "description": "Conception du middleware de paiement BTL connectant TuniCheque à Temenos T24 R11 via SOAP. Le système traite plus de 1 000 transactions de réservation de chèques par jour.",
+            "description": "Conception de bout en bout de la middleware de paiement BTL en Python/FastAPI : API REST consommée par la plateforme nationale PECC, avec messages SOAP/OFS vers Temenos T24 R11. Refonte de deux applications bancaires critiques (SWIFT, circuits d'approbation) et développement de BTL-Synthèse.",
             "bullets": [
-                "Conception du middleware de paiement BTL : TuniCheque → Temenos T24 R11 via SOAP (messages OFS), traite 1 000+ transactions de réservation de chèques quotidiennement",
-                "Tableau de bord de monitoring temps réel avec journalisation complète des transactions et traçabilité pour les équipes bancaires",
-                "Direction de l'application BTL M Banking de bout en bout ; amélioration des workflows bancaires de 20 % ; optimisation des messages SWIFT",
-                "Livraison de BTL-Synthese : application modulaire pour numériser et valider les bilans et comptes de résultat des clients pour l'évaluation du risque crédit"
+                "Conception de bout en bout de la middleware de paiement BTL en Python/FastAPI : API REST consommée par la plateforme nationale PECC, avec messages SOAP/OFS vers Temenos T24 R11, gestion des OTP et journalisation à deux niveaux (suivi global quotidien + traçabilité opération par opération)",
+                "Reprise et refonte de deux applications bancaires critiques (gestion des opérations SWIFT : MT103, MT202, MT202COV, MT950 ; digitalisation des circuits d'approbation pour la compensation, la réservation de chèques et les crédits) : introduction de services réutilisables, gestion des exceptions et messages d'erreur clairs",
+                "Développement de BTL-Synthèse : application modulaire pour numériser et valider les bilans clients, avec contrôle automatique actif/passif, calcul de ratios financiers et traçabilité complète des saisies",
+                "Interlocuteur technique entre la direction BTL et Pixel Trade (prestataire externe) pour BTL M Banking (Android/iOS) et le site web : qualification et suivi des anomalies",
+                "Fourniture de logs et rapports aux équipes risque et audit : suivi des opérations SWIFT, traçabilité des validations et des saisies comptables"
             ],
-            "stack": "Laravel 9 · PHP 8.3 · MySQL · Temenos T24 · TailwindCSS · JBase · API REST · SOAP"
+            "stack": "Python · FastAPI · MySQL · Temenos T24 · SOAP · API REST · JBase · React.js"
         },
         {
             "company": "Hortensia Agency",
@@ -151,8 +154,8 @@
         {
             "title": "Middleware-BTL – Intégration Bancaire Core",
             "href": "",
-            "description": "Middleware de production reliant TuniChèques à Temenos T24 R11 via SOAP (messages OFS) avec une couche API REST pour les consommateurs internes. Traite 1 000+ transactions quotidiennes avec journalisation complète et tableau de bord de monitoring temps réel.",
-            "technologies": ["PHP 8.3", "JBase", "MySQL", "API REST", "SOAP", "Temenos T24"],
+            "description": "Middleware de production en Python/FastAPI reliant la plateforme nationale PECC à Temenos T24 R11 via SOAP (messages OFS), avec une couche API REST pour les consommateurs internes, gestion des OTP et journalisation à deux niveaux.",
+            "technologies": ["Python", "FastAPI", "JBase", "MySQL", "API REST", "SOAP", "Temenos T24"],
             "links": [],
             "icon": "🏦",
             "logoUrl": "/btl.png",
@@ -161,8 +164,8 @@
         {
             "title": "BTL-Synthèse – Analyse des États Financiers",
             "href": "",
-            "description": "Application modulaire pour numériser et valider les bilans et comptes de résultat des clients. Logique de lignes financières configurable, validation automatique actif/passif/résultat fiscal, pour accélérer l'évaluation du risque crédit.",
-            "technologies": ["Laravel 9", "MySQL", "TailwindCSS"],
+            "description": "Application modulaire en Python/FastAPI pour numériser et valider les bilans et comptes de résultat des clients. Logique de lignes financières configurable, validation automatique actif/passif/résultat fiscal, pour accélérer l'évaluation du risque crédit.",
+            "technologies": ["Python", "FastAPI", "MySQL", "React.js"],
             "links": [],
             "icon": "📊",
             "logoUrl": "/btl.png",
@@ -210,7 +213,7 @@
         "contact": "Contact",
         "contactTitle": "Construisons quelque chose de <em>grand</em> ensemble",
         "present": "Présent",
-        "heroEyebrow": "Ouvert aux opportunités · Strasbourg, France",
+        "heroEyebrow": "Ouvert aux opportunités · Strasbourg, Toulouse, Paris ou remote",
         "heroH1a": "Je suis Fayçal,",
         "heroH1b": "ingénieur",
         "heroH1c": "logiciel",
@@ -218,7 +221,7 @@
         "heroCta2": "💬 Discutons",
         "aboutAvailable": "Disponible",
         "aboutTitle": "Ingénieur & bâtisseur dans l'âme",
-        "aboutP1": "Salut ! Je suis Fayçal, ingénieur backend avec <strong>3+ ans</strong> d'expérience dans les intégrations financières, middleware de paiement et APIs scalables. Je livre des systèmes production en Python, PHP et React.js.",
+        "aboutP1": "Salut ! Je suis Fayçal, ingénieur backend avec <strong>3+ ans</strong> d'expérience dans les intégrations financières, middleware de paiement et APIs scalables. Je livre des systèmes production en Python et React.js.",
         "aboutP2": "Mon travail couvre <strong>les middlewares bancaires critiques, les pipelines de données temps réel et les systèmes de perception autonome</strong>. J'aime du code rapide, fiable et que les équipes peuvent faire évoluer sans crainte.",
         "aboutP3": "Actuellement lead engineer sur <em>Mon Trajet Vert</em> au CESI Strasbourg, 20M+ lignes GTFS traitées depuis 7 villes.<br>Aussi auteur de <em>LazyKitty</em>, un framework web Python open-source.",
         "aboutP4": "Auteur de <em>LazyKitty</em>, un framework web Python open-source.",
@@ -240,7 +243,7 @@
         "certBadge": "Certifications",
         "certTitle": "Apprentissage continu",
         "certSub": "Formations et certifications qui témoignent de mon engagement pour la croissance.",
-        "contactSub": "Ouvert aux postes d'ingénieur et aux projets intéressants. Je réponds généralement en 24h. Parlons-en !",
+        "contactSub": "Ouvert aux postes d'ingénieur à Strasbourg, Toulouse, Paris ou en remote, ainsi qu'aux projets intéressants. Je réponds généralement en 24h. Parlons-en !",
         "contactNameLabel": "Nom",
         "contactNamePh": "Votre nom",
         "contactEmailLabel": "E-mail",

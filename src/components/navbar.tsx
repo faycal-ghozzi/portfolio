@@ -83,7 +83,7 @@ export default function Navbar() {
           <Image src="/logo.png" alt="logo" width={28} height={28} className="pg-logo-pulse" style={{ display: "block" }} />
         </Link>
 
-        {/* Nav links — hidden on mobile */}
+        {/* Nav links - hidden on mobile */}
         <ul
           className="hidden sm:flex"
           style={{ gap: "4px", listStyle: "none", margin: 0, padding: 0 }}

@@ -61,12 +61,12 @@ export function ProjectsSection() {
           </p>
         </Reveal>
 
-        {/* Featured project — full width */}
+        {/* Featured project - full width */}
         <Reveal className="projects-main">
           <ProjectCard project={main} colorIndex={0} />
         </Reveal>
 
-        {/* Rest — 2 column grid */}
+        {/* Rest - 2 column grid */}
         <div
           style={{
             display: "grid",
