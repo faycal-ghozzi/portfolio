@@ -27,7 +27,7 @@ export function Footer() {
         <span className="pg-heartbeat" style={{ color: "var(--pg-primary)" }}>❤️</span>
         {" "}in Strasbourg
       </div>
-      <div>
+      {/* <div>
         <a
           href="https://github.com/faycal-ghozzi"
           target="_blank"
@@ -43,7 +43,7 @@ export function Footer() {
         >
           {s.footerBuilt}
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }
