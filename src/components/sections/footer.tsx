@@ -12,7 +12,7 @@ export function Footer() {
         padding: "36px 40px",
         borderTop: "1px solid var(--pg-border)",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
         fontSize: "13px",
         color: "var(--pg-text2)",
