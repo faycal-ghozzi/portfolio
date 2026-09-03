@@ -53,7 +53,7 @@
                 "Handled GTFS edge cases: overnight trips, public holiday calendars, line colour normalisation",
                 "Coordinated weekly sprints with our partner on web/mobile deliverables; mentored interns and doctoral researchers"
             ],
-            "stack": "Python · FastAPI · React · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
+            "stack": "Python · FastAPI · PHP · COBOL · React · Docker · GCP Cloud Run · Firestore · GraphQL · GTFS/GTFS-RT · C#"
         },
         {
             "company": "Banque Tuniso-Libyenne (BTL)",
@@ -84,14 +84,14 @@
                 "Worked on Project Curve, forecasting project end dates and costs via sigmoid-based modelling; debugged core platform issues",
                 "Integrated Stripe payment and subscription solutions: free/paid tiers with webhook-based billing lifecycle management"
             ],
-            "stack": "Python · Flask · React · MongoDB · Stripe"
+            "stack": "Python · Flask · Java · Spring Boot · C# · .NET · React · MongoDB · Stripe"
         },
         {
             "company": "7Systems GmbH",
             "href": "https://bmacloud.de",
             "title": "Full Stack Developer",
             "logoUrl": "/7s.png",
-            "start": "February 2023",
+            "start": "September 2022",
             "end": "April 2024",
             "description": "Contributed to the development and stabilisation of the bmacloud.de SaaS platform in Gummersbach, Germany. Migrated the legacy frontend to React and worked closely with clients to translate business needs into features.",
             "bullets": [
@@ -110,7 +110,7 @@
             "degree": "National Engineering Degree in Computer Science",
             "logoUrl": "/esprit.jpg",
             "start": "2017",
-            "end": "2023"
+            "end": "2022"
         }
     ],
     "projects": [

@@ -84,14 +84,14 @@
                 "Travail sur Project Curve, prévision des dates de fin et des coûts de projet via une modélisation sigmoïde ; débogage du cœur de la plateforme",
                 "Intégration des solutions de paiement et d'abonnement Stripe : offres gratuites/payantes avec gestion du cycle de facturation par webhooks"
             ],
-            "stack": "Python · Flask · React · MongoDB · Stripe"
+            "stack": "Python · Flask · Java · Spring Boot · C# · .NET · React · MongoDB · Stripe"
         },
         {
             "company": "7Systems GmbH",
             "href": "https://bmacloud.de",
             "title": "Développeur Full Stack",
             "logoUrl": "/7s.png",
-            "start": "Février 2023",
+            "start": "Septembre 2022",
             "end": "Avril 2024",
             "description": "Participation au développement et à la stabilisation de la plateforme SaaS bmacloud.de à Gummersbach, Allemagne. Migration du frontend legacy vers React et collaboration étroite avec les clients pour traduire leurs besoins en fonctionnalités.",
             "bullets": [
@@ -110,7 +110,7 @@
             "degree": "Diplôme National d'Ingénieur en Informatique",
             "logoUrl": "/esprit.jpg",
             "start": "2017",
-            "end": "2023"
+            "end": "2022"
         }
     ],
     "projects": [
